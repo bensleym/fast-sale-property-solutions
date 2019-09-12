@@ -1,0 +1,18 @@
+.header {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+
+  &__logo {
+    flex-basis: 20%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__navigation {
+    flex-basis: 80%;
+  }
+}
