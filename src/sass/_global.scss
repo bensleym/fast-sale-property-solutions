@@ -29,3 +29,8 @@ h3 {
 h4 {
   font-size: $font-h4;
 }
+
+label,
+input {
+  font-family: $font-family-body;
+}

@@ -3,10 +3,12 @@ import React, { Component } from "react";
 class GetAnOffer extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
   }
 
+  state = this.props.location.state;
+
   render() {
+    console.log(this.state);
     return <h1>Get An Offer</h1>;
   }
 }

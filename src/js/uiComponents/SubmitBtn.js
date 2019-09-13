@@ -2,8 +2,8 @@ import React from "react";
 
 const SubmitBtn = ({ value }) => {
   return (
-    <div className="">
-      <input type="submit" value="Get me and offer" />
+    <div className="submit-btn">
+      <input type="submit" value={value} className="submit-btn__btn" />
     </div>
   );
 };

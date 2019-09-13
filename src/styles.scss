@@ -1,5 +1,6 @@
 // Third party
 @import "node_modules/sass-google-fonts/src/GoogleFonts.scss";
+@import "~bootstrap/scss/bootstrap";
 
 // Theme vaiables
 @import "./sass/themeVariables/theme-variables";
@@ -8,8 +9,11 @@
 @import "./sass/global";
 
 // Ui components
-@import "./sass/uiComponents/uiComponents";
+@import "./sass/uiComponents/inputRow";
+@import "./sass/uiComponents/submitBtn";
 
 // Elements
 @import "./sass/header/header";
 @import "./sass/navigation/navigation";
+@import "./sass/homepage/heroHome";
+@import "./sass/homepage/heroOfferForm";

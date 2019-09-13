@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import InputRow from "../uiComponents/InputRow";
 import SubmitBtn from "../uiComponents/SubmitBtn";
 import { navigate } from "@reach/router";
+import HeroOfferForm from "./HeroOfferForm";
 
 class HeroHome extends Component {
   state = { redirect: false, name: "", phone: "", email: "" };
@@ -18,35 +19,22 @@ class HeroHome extends Component {
   render() {
     return (
       <div className="hero-home">
-        <div className="col-6">
-          <h1>Fast Sale Property Solutions</h1>
-        </div>
-        <div className="col-6">
-          <form
-            onSubmit={e => {
-              e.preventDefault();
-              this.handleSubmit();
-            }}
-            onChange={e => {
-              this.handleOnChange(e);
-            }}
-          >
-            <InputRow id="name" type="text" label="Name" placeHolder="Name" />
-            <InputRow
-              id="phone"
-              type="number"
-              label="Phone"
-              placeHolder="Phone number"
-            />
-            <InputRow
-              id="email"
-              type="text"
-              label="Email"
-              placeHolder="Email"
-            />
-
-            <SubmitBtn value="Get me and offer" />
-          </form>
+        <div className="container">
+          <div className="row">
+            <div className="col-8">
+              <h1 className="hero-home__title">Fast Sale Property Solutions</h1>
+              <p className="hero-home__intro">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse tristique tincidunt mi efficitur suscipit. Nam
+                tristique enim ligula, porttitor blandit metus molestie quis.
+                Integer commodo sapien justo, at sollicitudin odio dignissim
+                vitae.{" "}
+              </p>
+            </div>
+            <div className="col-4">
+              <HeroOfferForm />
+            </div>
+          </div>
         </div>
       </div>
     );

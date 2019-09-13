@@ -1,0 +1,13 @@
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+
+  &__btn {
+    width: 100%;
+    padding: 10px;
+    background: $green;
+    color: $white;
+    border: none;
+    border-radius: 3px;
+  }
+}

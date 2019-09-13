@@ -8,13 +8,15 @@ class Header extends Component {
   render() {
     return (
       <header className="header">
-        <div className="header__logo">
-          <Link to="/">
-            <img src={LogoMd} alt="Fast Sale Property Solutions" />
-          </Link>
-        </div>
-        <div className="header__navigation">
-          <Navigation />
+        <div className="header--flex container">
+          <div className="header__logo">
+            <Link to="/">
+              <img src={LogoMd} alt="Fast Sale Property Solutions" />
+            </Link>
+          </div>
+          <div className="header__navigation">
+            <Navigation />
+          </div>
         </div>
       </header>
     );
