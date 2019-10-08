@@ -11,9 +11,21 @@
 // Ui components
 @import "./sass/uiComponents/inputRow";
 @import "./sass/uiComponents/submitBtn";
+@import "./sass/uiComponents/uspBlock";
+@import "./sass/uiComponents/ctaBtnLink";
 
 // Elements
 @import "./sass/header/header";
 @import "./sass/navigation/navigation";
+@import "./sass/footer/footer";
+@import "./sass/footer/footerLegals";
+
+// Page Content
+// Home Page
 @import "./sass/homepage/heroHome";
 @import "./sass/homepage/heroOfferForm";
+@import "./sass/homepage/uspsHome";
+@import "./sass/homepage/introHome";
+
+// WHere We Can Help
+@import "./sass/whereWeCanHelp/whereWeCanHelpHero.scss";

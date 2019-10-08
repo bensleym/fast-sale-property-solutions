@@ -31,14 +31,24 @@ class HeroOfferForm extends Component {
             this.handleOnChange(e);
           }}
         >
-          <InputRow id="name" type="text" label="Name" placeHolder="Name" />
+          <InputRow
+            id="firstName"
+            type="text"
+            label="First Name"
+            placeHolder="First Name"
+          />
+          <InputRow
+            id="lastName"
+            type="text"
+            label="Last Name"
+            placeHolder="Last Name"
+          />
           <InputRow
             id="phone"
             type="number"
             label="Phone"
             placeHolder="Phone number"
           />
-          <InputRow id="email" type="text" label="Email" placeHolder="Email" />
 
           <SubmitBtn value="Get an offer" />
         </form>

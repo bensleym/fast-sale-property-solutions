@@ -1,0 +1,23 @@
+.footer {
+  border-top: 1px solid $gray-300;
+  padding: 40px 0 0;
+
+  &__list-title {
+    font-size: $font-h4;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 10px 0 0;
+  }
+
+  &__list-item {
+    list-style: none;
+    margin: 5px 0 0;
+  }
+
+  &__link {
+    color: $gray-300;
+    text-decoration: none;
+  }
+}

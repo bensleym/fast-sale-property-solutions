@@ -3,6 +3,7 @@ import InputRow from "../uiComponents/InputRow";
 import SubmitBtn from "../uiComponents/SubmitBtn";
 import { navigate } from "@reach/router";
 import HeroOfferForm from "./HeroOfferForm";
+import UspBlock from "../uiComponents/UspBlock";
 
 class HeroHome extends Component {
   state = { redirect: false, name: "", phone: "", email: "" };

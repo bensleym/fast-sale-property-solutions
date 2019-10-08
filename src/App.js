@@ -8,6 +8,7 @@ import StandardAndEthics from "./js/views/StandardsAndEthics";
 import WhereWeCanHelp from "./js/views/WhereWeCanHelp";
 import WhyChooseUs from "./js/views/WhyChooseUs";
 import Homepage from "./js/views/HomePage";
+import Footer from "./js/footer/Footer";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <WhereWeCanHelp path="/where-we-can-help" />
           <WhyChooseUs path="why-choose-us" />
         </Router>
+        <Footer />
       </div>
     </React.StrictMode>
   );

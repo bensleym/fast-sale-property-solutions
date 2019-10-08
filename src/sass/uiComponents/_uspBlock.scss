@@ -1,0 +1,22 @@
+.usp-block {
+  text-align: center;
+  border-right: 1px solid $gray-100;
+  padding: 20px;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  &__icon {
+    font-size: 50px;
+  }
+
+  &__title {
+    font-size: $font-h3;
+    margin-top: 10px;
+  }
+
+  &__text {
+    margin-top: 10px;
+  }
+}

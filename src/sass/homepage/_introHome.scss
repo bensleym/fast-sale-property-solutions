@@ -1,0 +1,22 @@
+.intro-home {
+  margin-top: 40px;
+  background: $gray-100;
+  padding: 40px 0;
+
+  &__content {
+    padding-right: 50px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    margin: 0 0 0 15px;
+    padding: 0;
+  }
+
+  &__list-item {
+    margin: 5px 0 0;
+  }
+}

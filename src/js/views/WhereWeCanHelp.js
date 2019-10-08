@@ -1,8 +1,15 @@
 import React, { Component } from "react";
+import WhereWeCanHelpHero from "../whereWeCanHelp/WhereWeCanHelpHero";
+import WhereWeCanHelpContent from "../whereWeCanHelp/WhereWeCanHelpContent";
 
 class WhereWeCanHelp extends Component {
   render() {
-    return <h1>Where we can help</h1>;
+    return (
+      <div>
+        <WhereWeCanHelpHero />
+        <WhereWeCanHelpContent />
+      </div>
+    );
   }
 }
 
