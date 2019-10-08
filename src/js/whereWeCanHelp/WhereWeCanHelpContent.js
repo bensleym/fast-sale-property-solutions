@@ -37,49 +37,49 @@ class WhereWeCanHelpContent extends Component {
                 <SideNavigationLink
                   id="financialDifficulties"
                   label="Financial Diffculties"
-                  url="/where-we-can-help/financial-difficulties"
+                  url="financial-difficulties"
                 />
                 <SideNavigationLink
                   id="problemsPayingYourMortgage"
                   label="Problems Paying Your Mortgage"
-                  url="/where-we-can-help/problems-paying-your-mortgage"
+                  url="problems-paying-your-mortgage"
                 />
                 <SideNavigationLink
                   id="repossession"
                   label="Repossession"
-                  url="/where-we-can-help/repossession"
+                  url="repossession"
                 />
                 <SideNavigationLink
                   id="brokenChain"
                   label="Broken Chain"
-                  url="/where-we-can-help/broken-chain"
+                  url="broken-chain"
                 />
                 <SideNavigationLink
                   id="movingAbroad"
                   label="Moving Abroad"
-                  url="/where-we-can-help/moving-abroad"
+                  url="moving-abroad"
                 />
                 <SideNavigationLink
                   id="divorce"
                   label="Divorce"
-                  url="/where-we-can-help/divorce"
+                  url="divorce"
                 />
                 <SideNavigationLink
                   id="probate"
                   label="Probate"
-                  url="/where-we-can-help/probabte"
+                  url="probate"
                 />
               </ul>
             </div>
             <div className="col-8">
               <Router>
-                <FinancialDifficulties path="/where-we-can-help/" />
-                <ProblemsPayingYourMortgage path="/where-we-can-help/" />
-                <Divorce path="/where-we-can-help/" />
-                <BrokenChain path="/where-we-can-help/" />
-                <Probate path="/where-we-can-help/" />
-                <Repossession path="/where-we-can-help/" />
-                <MovingAbroad path="/where-we-can-help/" />
+                <FinancialDifficulties path="financial-difficulties" />
+                <ProblemsPayingYourMortgage path="problems-paying-your-mortgage" />
+                <Divorce path="divorce" />
+                <BrokenChain path="broken-chain" />
+                <Probate path="probate" />
+                <Repossession path="repossession" />
+                <MovingAbroad path="moving-abroad" />
               </Router>
             </div>
           </div>

@@ -20,7 +20,7 @@ const App = () => {
           <ContactUs path="/contact-us" />
           <GetAnOffer path="/get-an-offer" />
           <StandardAndEthics path="/standards-and-ethics" />
-          <WhereWeCanHelp path="/where-we-can-help" />
+          <WhereWeCanHelp path="/where-we-can-help/*" />
           <WhyChooseUs path="why-choose-us" />
         </Router>
         <Footer />
