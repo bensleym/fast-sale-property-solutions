@@ -13,6 +13,8 @@
 @import "./sass/uiComponents/submitBtn";
 @import "./sass/uiComponents/uspBlock";
 @import "./sass/uiComponents/ctaBtnLink";
+@import "./sass/uiComponents/sideNavigation";
+@import "./sass/uiComponents/sideNavigationLink";
 
 // Elements
 @import "./sass/header/header";
@@ -27,5 +29,10 @@
 @import "./sass/homepage/uspsHome";
 @import "./sass/homepage/introHome";
 
-// WHere We Can Help
+// Where We Can Help
 @import "./sass/whereWeCanHelp/whereWeCanHelpHero.scss";
+@import "./sass/whereWeCanHelp/whereWeCanHelpContent.scss";
+
+// Why Choose Us
+@import "./sass/whyChooseUs/whyChooseUsHero.scss";
+// @import "./sass/whereWeCanHelp/whereWeCanHelpContent.scss";

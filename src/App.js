@@ -15,7 +15,7 @@ const App = () => {
     <React.StrictMode>
       <div>
         <Header />
-        <Router>
+        <Router primary={false}>
           <Homepage path="/" />
           <ContactUs path="/contact-us" />
           <GetAnOffer path="/get-an-offer" />

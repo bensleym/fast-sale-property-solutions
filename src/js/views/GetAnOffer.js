@@ -9,7 +9,13 @@ class GetAnOffer extends Component {
 
   render() {
     console.log(this.state);
-    return <h1>Get An Offer</h1>;
+    return (
+      <div className="get-an-offer">
+        <div className="container">
+          <h1>Get an offer</h1>
+        </div>
+      </div>
+    );
   }
 }
 

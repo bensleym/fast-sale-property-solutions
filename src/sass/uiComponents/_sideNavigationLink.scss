@@ -1,0 +1,21 @@
+.side-navigation-link {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid $gray-200;
+  font-weight: 300;
+
+  &:last-child {
+    border: none;
+  }
+
+  &__link {
+    padding: 10px;
+    display: block;
+    color: $black;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
