@@ -1,19 +1,19 @@
 import React, { Component } from "react";
+import GetAnOfferHeader from "../getAnOffer/GetAnOfferHeader";
+import GetAnOfferForm from "../getAnOffer/GetAnOfferForm";
 
 class GetAnOffer extends Component {
   constructor(props) {
     super(props);
   }
 
-  state = this.props.location.state;
+  // state = this.props.location.state;
 
   render() {
-    console.log(this.state);
     return (
-      <div className="get-an-offer">
-        <div className="container">
-          <h1>Get an offer</h1>
-        </div>
+      <div className="container">
+        <GetAnOfferHeader />
+        <GetAnOfferForm />
       </div>
     );
   }
