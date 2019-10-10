@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import InputRow from "../uiComponents/InputRow";
-import FormHeader from "./FormHaeder";
+import FormHeader from "./FormHeader";
 import SelectRow from "../uiComponents/SelectRow";
 
 class PropertyDetails extends Component {

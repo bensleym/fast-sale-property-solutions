@@ -5,6 +5,11 @@ import PropertyDetails from "./PropertyDetails";
 import PropertyAddress from "./PropertyAddress";
 
 class GetAnOfferForm extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = this.props.userDetails;
+  }
   handleSubmit() {
     console.log("Submitted");
   }
@@ -17,7 +22,7 @@ class GetAnOfferForm extends Component {
     return (
       <div className="get-an-offer-form">
         <form onSubmit={this.handleChange()} onChange={this.handleChange()}>
-          <PersonalDetails />
+          <PersonalDetails userDetails={this.state} />
           <PropertyAddress />
           <PropertyDetails />
           <SubmitBtn value="Get an offer" />

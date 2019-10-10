@@ -4,7 +4,7 @@ import SubmitBtn from "../uiComponents/SubmitBtn";
 import { navigate } from "@reach/router";
 
 class HeroOfferForm extends Component {
-  state = { redirect: false, name: "", phone: "", email: "" };
+  state = { redirect: false, firstName: "", lastName: "", phone: "" };
 
   handleSubmit() {
     this.setState({ redirect: true });

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import InputRow from "../uiComponents/InputRow";
-import FormHeader from "./FormHaeder";
+import FormHeader from "./FormHeader";
 
 class PropertyAddress extends Component {
   render() {

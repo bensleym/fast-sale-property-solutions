@@ -5,15 +5,15 @@ import GetAnOfferForm from "../getAnOffer/GetAnOfferForm";
 class GetAnOffer extends Component {
   constructor(props) {
     super(props);
-  }
 
-  // state = this.props.location.state;
+    this.state = this.props.location.state;
+  }
 
   render() {
     return (
       <div className="container">
         <GetAnOfferHeader />
-        <GetAnOfferForm />
+        <GetAnOfferForm userDetails={this.state} />
       </div>
     );
   }
