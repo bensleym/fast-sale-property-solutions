@@ -1,5 +1,5 @@
 {
-  "name": "adopt-me",
+  "name": "fast-sale",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bensleym/react-course.git"
+    "url": "git+https://github.com/bensleym/fast-sale-property-solutions.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bensleym/react-course/issues"
+    "url": "https://github.com/bensleym/fast-sale-property-solutions/issues"
   },
-  "homepage": "https://github.com/bensleym/react-course#readme",
+  "homepage": "https://github.com/bensleym/fast-sale-property-solutions#readme",
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
