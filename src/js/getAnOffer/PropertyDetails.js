@@ -4,6 +4,9 @@ import FormHeader from "./FormHeader";
 import SelectRow from "../uiComponents/SelectRow";
 
 class PropertyDetails extends Component {
+  state = {
+    checkSecuredLoans: false
+  };
   constructor() {
     super();
 
@@ -28,42 +31,95 @@ class PropertyDetails extends Component {
     ];
     this.secureLoansOptions = ["Yes", "No"];
   }
+
+  handleSecuredLoans() {
+    const sercureLoans = document.getElementById("securedLoans");
+
+    if (sercureLoans.value === "yes") {
+      this.setState({
+        checkSecuredLoans: true
+      });
+    } else {
+      this.setState({
+        checkSecuredLoans: false
+      });
+    }
+  }
+
+  propertyDetailsForm() {
+    return (
+      <fieldset>
+        <FormHeader headerTitle="Property Details" />
+        <SelectRow
+          id="timeToSell"
+          label="How quickly would you like to sell the property"
+          options={this.timeOptions}
+          required={true}
+        />
+
+        <SelectRow
+          id="reasonToSell"
+          label="What is the reason for selling the property"
+          options={this.reasonOptions}
+          required={true}
+        />
+        <InputRow
+          id="propertyValue"
+          type="text"
+          label="Estimated Property Value"
+          placeHolder=""
+          required={true}
+        />
+
+        <InputRow
+          id="outstandingMortgage"
+          type="text"
+          label="Outstanding Amount On Mortgage"
+          placeHolder=""
+          required={true}
+        />
+
+        <div className="select-row">
+          <label htmlFor="securedLoans" className="select-row__label">
+            <span className="select-row__required">
+              Do you have any loans secured on your property:
+            </span>
+            <select
+              id="securedLoans"
+              name="securedLoans"
+              className="select-row__input"
+              onChange={e => {
+                this.handleSecuredLoans(e);
+              }}
+              onBlur={e => {
+                this.handleSecuredLoans(e);
+              }}
+            >
+              <option value="" disabled selected>
+                Please Choose
+              </option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+    );
+  }
+
   render() {
+    if (!this.state.checkSecuredLoans) {
+      return <div>{this.propertyDetailsForm()}</div>;
+    }
     return (
       <div>
-        <fieldset>
-          <FormHeader headerTitle="Property Details" />
-          <SelectRow
-            id="timeToSell"
-            label="How quickly would you like to sell the property"
-            options={this.timeOptions}
-          />
-
-          <SelectRow
-            id="reasonToSell"
-            label="What is the reason for selling the property"
-            options={this.reasonOptions}
-          />
-          <InputRow
-            id="propertyValue"
-            type="text"
-            label="Estimated Property Value"
-            placeHolder=""
-          />
-
-          <InputRow
-            id="outstandingMortgage"
-            type="text"
-            label="Outstanding Amount On Mortgage"
-            placeHolder=""
-          />
-
-          <SelectRow
-            id="securedLoans"
-            label="Do you have any loans secured on your property"
-            options={this.secureLoansOptions}
-          />
-        </fieldset>
+        {this.propertyDetailsForm()}
+        <InputRow
+          id="securedLoansValue"
+          type="text"
+          label="If yes, how much is the loan"
+          placeHolder="Loan Value"
+        />
       </div>
     );
   }

@@ -10,4 +10,13 @@
     border: none;
     border-radius: 3px;
   }
+
+  &__link {
+    background: none;
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+    color: $cta;
+    text-decoration: underline;
+  }
 }

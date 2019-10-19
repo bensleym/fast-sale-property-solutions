@@ -9,28 +9,23 @@ class PropertyAddress extends Component {
   };
   constructor() {
     super();
-    this.houseNumber = "";
-    this.streetAddress = "";
-    this.townCity = "";
-    this.county = "";
-    this.postcode = "";
   }
 
   async handleAddressFind() {
-    // const submitBtn = document.getElementById("findAddressBtn");
     const postcode = document.getElementById("postcodeSearch").value || "";
     const house = document.getElementById("houseSearch").value || "";
 
     await addressFormRequest(postcode, house)
-      .then(data => {
-        //({data})
+      .then(({ data }) => {
         this.setState({
           fullAddressFormCheck: true,
-          houseNumber: data.data.addresses[0].building_number,
-          streetAddress: data.data.addresses[0].thoroughfare,
-          townCity: data.data.addresses[0].town_or_city,
-          county: data.data.addresses[0].county,
-          postcode: data.data.postcode
+          houseNumber: data.addresses[0].building_number
+            ? data.addresses[0].building_number
+            : data.addresses[0].sub_building_name,
+          streetAddress: data.addresses[0].thoroughfare,
+          townCity: data.addresses[0].town_or_city,
+          county: data.addresses[0].county,
+          postcode: data.postcode
         });
       })
       .catch(data => {
@@ -48,6 +43,7 @@ class PropertyAddress extends Component {
             label="House/Flat Number Or Name"
             placeHolder="Flat 3 / 8 / Green House"
             value={this.state.houseNumber ? this.state.houseNumber : ""}
+            required={true}
           />
 
           <InputRow
@@ -56,6 +52,7 @@ class PropertyAddress extends Component {
             label="Street"
             placeHolder="Lakeland Ave"
             value={this.state.streetAddress ? this.state.streetAddress : ""}
+            required={true}
           />
 
           <InputRow
@@ -64,6 +61,7 @@ class PropertyAddress extends Component {
             label="Town/City"
             placeHolder="Luton"
             value={this.state.townCity ? this.state.townCity : ""}
+            required={true}
           />
 
           <InputRow
@@ -72,6 +70,7 @@ class PropertyAddress extends Component {
             label="County"
             placeHolder="Bedfordshire"
             value={this.state.county ? this.state.county : ""}
+            required={true}
           />
           <InputRow
             id="postCode"
@@ -79,10 +78,15 @@ class PropertyAddress extends Component {
             label="Post Code"
             placeHolder="LU2 7DE"
             value={this.state.postcode ? this.state.postcode : ""}
+            required={true}
           />
         </fieldset>
       </div>
     );
+  }
+
+  handleManualAddress() {
+    this.setState({ fullAddressFormCheck: true });
   }
 
   addressFinderForm() {
@@ -93,13 +97,25 @@ class PropertyAddress extends Component {
           type="text"
           label="House/Flat Number Or Name"
           placeHolder="Flat 3 / 8 / Green House"
+          required={true}
         />
         <InputRow
           id="postcodeSearch"
           type="text"
           label="Postcode"
           placeHolder="AL3 3DE"
+          required={true}
         />
+
+        <button
+          className="submit-btn__link"
+          onClick={e => {
+            e.preventDefault();
+            this.handleManualAddress();
+          }}
+        >
+          Enter address manually
+        </button>
       </div>
     );
   }

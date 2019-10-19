@@ -1,4 +1,4 @@
-import Ajax from "./Ajax";
+import Ajax from "./../utils/Ajax";
 
 const addressFormRequest = (postcode, house = {}) =>
   Ajax({

@@ -19,6 +19,7 @@ class PersonalDetails extends Component {
             id="personalTitle"
             label="Title"
             options={["Mr", "Mrs", "Miss", "Ms", "Dr"]}
+            required={true}
           />
           <InputRow
             id="firstName"
@@ -26,6 +27,7 @@ class PersonalDetails extends Component {
             label="First Name"
             placeHolder="First Name"
             value={this.props.userDetails.firstName}
+            required={true}
           />
 
           <InputRow
@@ -34,9 +36,16 @@ class PersonalDetails extends Component {
             label="Last Name"
             placeHolder="Last Name"
             value={this.props.userDetails.lastName}
+            required={true}
           />
 
-          <InputRow id="email" type="text" label="Email" placeHolder="Email" />
+          <InputRow
+            id="email"
+            type="text"
+            label="Email"
+            placeHolder="Email"
+            required={true}
+          />
 
           <InputRow
             id="number"
@@ -44,6 +53,7 @@ class PersonalDetails extends Component {
             label="Phone Number"
             placeHolder="Phone Number"
             value={this.props.userDetails.phone}
+            required={true}
           />
         </fieldset>
       </div>

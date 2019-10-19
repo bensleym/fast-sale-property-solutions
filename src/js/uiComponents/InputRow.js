@@ -16,7 +16,9 @@ class InputRow extends Component {
     return (
       <div className="input-row">
         <label htmlFor={this.props.id} className="input-row__label">
-          {this.props.label}:
+          <span className={this.props.required ? "input-row__required" : ""}>
+            {this.props.label}:
+          </span>
           <input
             id={this.props.id}
             type={this.props.type}
@@ -25,6 +27,7 @@ class InputRow extends Component {
             className="input-row__input"
             value={this.state.value}
             onChange={event => this.inputChangedHandler(event)}
+            data-required={this.props.required}
           />
         </label>
       </div>
