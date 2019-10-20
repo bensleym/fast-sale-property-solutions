@@ -1,5 +1,7 @@
 export default class FormControl {
   constructor() {
+    window.fsps.formValid = false;
+
     this.checkFormForErrors();
   }
 
@@ -14,6 +16,9 @@ export default class FormControl {
         inputErrorDom.innerHTML = "*Required";
       }
     }
-    console.log(inputsWithError.length);
+
+    if (inputsWithError.length === 0) {
+      window.fsps.formValid = true;
+    }
   }
 }

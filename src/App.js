@@ -10,6 +10,8 @@ import WhyChooseUs from "./js/views/WhyChooseUs";
 import Homepage from "./js/views/HomePage";
 import Footer from "./js/footer/Footer";
 
+window.fsps = {};
+
 const App = () => {
   return (
     <React.StrictMode>

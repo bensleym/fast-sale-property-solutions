@@ -11,17 +11,6 @@ class SelectRow extends Component {
     this.optionsGenerator(this.props.options);
   }
 
-  HandleErrorDom() {
-    if (this.props.required) {
-      return (
-        <span
-          className="form-error-handling__error-message"
-          data-form-error={this.props.id}
-        ></span>
-      );
-    }
-  }
-
   inputChangedHandler() {
     new FormErrorHandling();
   }
@@ -52,7 +41,10 @@ class SelectRow extends Component {
               Please Choose
             </option>
           </select>
-          {this.HandleErrorDom()}
+          <span
+            className="form-error-handling__error-message"
+            data-form-error={this.props.id}
+          ></span>
         </label>
       </div>
     );

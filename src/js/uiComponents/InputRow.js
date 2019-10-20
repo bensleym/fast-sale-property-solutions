@@ -12,17 +12,6 @@ class InputRow extends Component {
     new FormErrorHandling();
   }
 
-  HandleErrorDom() {
-    if (this.props.required) {
-      return (
-        <span
-          className="form-error-handling__error-message"
-          data-form-error={this.props.id}
-        ></span>
-      );
-    }
-  }
-
   createInputRow() {
     return (
       <div className="input-row">
@@ -42,7 +31,10 @@ class InputRow extends Component {
             data-form-control
             data-input-special={this.props.dataAttributeSpecial}
           />
-          {this.HandleErrorDom()}
+          <span
+            className="form-error-handling__error-message"
+            data-form-error={this.props.id}
+          ></span>
         </label>
       </div>
     );

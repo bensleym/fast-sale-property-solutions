@@ -9,6 +9,7 @@ class PropertyAddress extends Component {
   };
   constructor() {
     super();
+    window.fsps.fullAddress = false;
   }
 
   async handleAddressFind() {
@@ -62,6 +63,11 @@ class PropertyAddress extends Component {
   }
 
   fullAddressForm() {
+    window.fsps.fullAddress = true;
+
+    const addressDetailsId = document.getElementById("addressDetails");
+    addressDetailsId.classList.remove("property-address__error");
+
     return (
       <div>
         {this.state.addressLookUpFail ? this.addressLookupFail() : ""}
@@ -72,7 +78,7 @@ class PropertyAddress extends Component {
             label="House/Flat Number Or Name"
             placeHolder="Flat 3 / 8 / Green House"
             value={this.state.houseNumber ? this.state.houseNumber : "" || ""}
-            required={true}
+            required={this.state.houseNumber ? false : true}
           />
 
           <InputRow
@@ -83,7 +89,7 @@ class PropertyAddress extends Component {
             value={
               this.state.streetAddress ? this.state.streetAddress : "" || ""
             }
-            required={true}
+            required={this.state.streetAddress ? false : true}
           />
 
           <InputRow
@@ -92,7 +98,7 @@ class PropertyAddress extends Component {
             label="Town/City"
             placeHolder="Luton"
             value={this.state.townCity ? this.state.townCity : "" || ""}
-            required={true}
+            required={this.state.townCity ? false : true}
           />
 
           <InputRow
@@ -101,7 +107,7 @@ class PropertyAddress extends Component {
             label="County"
             placeHolder="Bedfordshire"
             value={this.state.county ? this.state.county : "" || ""}
-            required={true}
+            required={this.state.county ? false : true}
           />
           <InputRow
             id="postCode"
@@ -109,7 +115,7 @@ class PropertyAddress extends Component {
             label="Post Code"
             placeHolder="LU2 7DE"
             value={this.state.postcode ? this.state.postcode : "" || ""}
-            required={true}
+            required={this.state.postcode ? false : true}
           />
         </fieldset>
       </div>
