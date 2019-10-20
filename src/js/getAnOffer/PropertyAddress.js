@@ -71,7 +71,7 @@ class PropertyAddress extends Component {
             type="text"
             label="House/Flat Number Or Name"
             placeHolder="Flat 3 / 8 / Green House"
-            value={this.state.houseNumber ? this.state.houseNumber : ""}
+            value={this.state.houseNumber ? this.state.houseNumber : "" || ""}
             required={true}
           />
 
@@ -80,7 +80,9 @@ class PropertyAddress extends Component {
             type="text"
             label="Street"
             placeHolder="Lakeland Ave"
-            value={this.state.streetAddress ? this.state.streetAddress : ""}
+            value={
+              this.state.streetAddress ? this.state.streetAddress : "" || ""
+            }
             required={true}
           />
 
@@ -89,7 +91,7 @@ class PropertyAddress extends Component {
             type="text"
             label="Town/City"
             placeHolder="Luton"
-            value={this.state.townCity ? this.state.townCity : ""}
+            value={this.state.townCity ? this.state.townCity : "" || ""}
             required={true}
           />
 
@@ -98,7 +100,7 @@ class PropertyAddress extends Component {
             type="text"
             label="County"
             placeHolder="Bedfordshire"
-            value={this.state.county ? this.state.county : ""}
+            value={this.state.county ? this.state.county : "" || ""}
             required={true}
           />
           <InputRow
@@ -106,7 +108,7 @@ class PropertyAddress extends Component {
             type="text"
             label="Post Code"
             placeHolder="LU2 7DE"
-            value={this.state.postcode ? this.state.postcode : ""}
+            value={this.state.postcode ? this.state.postcode : "" || ""}
             required={true}
           />
         </fieldset>
@@ -128,6 +130,7 @@ class PropertyAddress extends Component {
           placeHolder="Flat 3 / 8 / Green House"
           required={true}
           dataAttributeSpecial="address-finder"
+          value=""
         />
         <InputRow
           id="postcodeSearch"
@@ -136,6 +139,7 @@ class PropertyAddress extends Component {
           placeHolder="AL3 3DE"
           required={true}
           dataAttributeSpecial="address-finder"
+          value=""
         />
 
         <button

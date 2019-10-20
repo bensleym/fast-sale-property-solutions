@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import InputRow from "../uiComponents/InputRow";
 import FormHeader from "./FormHeader";
 import SelectRow from "../uiComponents/SelectRow";
+import FormErrorHandling from "../utils/FormErrorHandling";
 
 class PropertyDetails extends Component {
   state = {
@@ -69,6 +70,7 @@ class PropertyDetails extends Component {
           label="Estimated Property Value"
           placeHolder=""
           required={true}
+          value=""
         />
 
         <InputRow
@@ -77,6 +79,7 @@ class PropertyDetails extends Component {
           label="Outstanding Amount On Mortgage"
           placeHolder=""
           required={true}
+          value=""
         />
 
         <div className="select-row">
@@ -89,9 +92,11 @@ class PropertyDetails extends Component {
               name="securedLoans"
               className="select-row__input"
               data-required={true}
+              data-form-control
               defaultValue=""
               onChange={e => {
                 this.handleSecuredLoans(e);
+                new FormErrorHandling();
               }}
               onBlur={e => {
                 this.handleSecuredLoans(e);
@@ -125,6 +130,8 @@ class PropertyDetails extends Component {
           type="text"
           label="If yes, how much is the loan"
           placeHolder="Loan Value"
+          value=""
+          required={true}
         />
       </div>
     );

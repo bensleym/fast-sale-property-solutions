@@ -25,7 +25,7 @@ class PersonalDetails extends Component {
             type="text"
             label="First Name"
             placeHolder="First Name"
-            value={this.props.userDetails.firstName}
+            value={this.props.userDetails.firstName || ""}
             required={true}
           />
 
@@ -34,7 +34,7 @@ class PersonalDetails extends Component {
             type="text"
             label="Last Name"
             placeHolder="Last Name"
-            value={this.props.userDetails.lastName}
+            value={this.props.userDetails.lastName || ""}
             required={true}
           />
 
@@ -44,6 +44,7 @@ class PersonalDetails extends Component {
             label="Email"
             placeHolder="Email"
             required={true}
+            value=""
           />
 
           <InputRow
@@ -51,7 +52,7 @@ class PersonalDetails extends Component {
             type="text"
             label="Phone Number"
             placeHolder="Phone Number"
-            value={this.props.userDetails.phone}
+            value={this.props.userDetails.phone || ""}
             required={true}
           />
         </fieldset>

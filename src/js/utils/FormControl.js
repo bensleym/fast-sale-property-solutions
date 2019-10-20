@@ -14,5 +14,6 @@ export default class FormControl {
         inputErrorDom.innerHTML = "*Required";
       }
     }
+    console.log(inputsWithError.length);
   }
 }
