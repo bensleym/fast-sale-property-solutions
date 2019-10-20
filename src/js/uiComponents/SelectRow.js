@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import FormErrorHandling from "./../utils/FormErrorHandling";
 
 class SelectRow extends Component {
   constructor(props) {
@@ -8,6 +9,21 @@ class SelectRow extends Component {
 
   componentDidMount() {
     this.optionsGenerator(this.props.options);
+  }
+
+  HandleErrorDom() {
+    if (this.props.required) {
+      return (
+        <span
+          className="form-error-handling__error-message"
+          data-form-error={this.props.id}
+        ></span>
+      );
+    }
+  }
+
+  inputChangedHandler() {
+    new FormErrorHandling();
   }
 
   selectGenerator() {
@@ -22,11 +38,21 @@ class SelectRow extends Component {
             name={this.props.id}
             ref={this.selectRef}
             className="select-row__input"
+            data-required={this.props.required}
+            data-form-control
+            defaultValue=""
+            onBlur={() => {
+              this.inputChangedHandler();
+            }}
+            onChange={() => {
+              this.inputChangedHandler();
+            }}
           >
-            <option value="" disabled selected>
+            <option value="" disabled>
               Please Choose
             </option>
           </select>
+          {this.HandleErrorDom()}
         </label>
       </div>
     );

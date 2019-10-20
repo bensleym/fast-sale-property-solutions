@@ -12,30 +12,59 @@ class PropertyAddress extends Component {
   }
 
   async handleAddressFind() {
-    const postcode = document.getElementById("postcodeSearch").value || "";
-    const house = document.getElementById("houseSearch").value || "";
+    const postcodeValue = document.getElementById("postcodeSearch").value || "";
+    const houseValue = document.getElementById("houseSearch").value || "";
 
-    await addressFormRequest(postcode, house)
-      .then(({ data }) => {
-        this.setState({
-          fullAddressFormCheck: true,
-          houseNumber: data.addresses[0].building_number
-            ? data.addresses[0].building_number
-            : data.addresses[0].sub_building_name,
-          streetAddress: data.addresses[0].thoroughfare,
-          townCity: data.addresses[0].town_or_city,
-          county: data.addresses[0].county,
-          postcode: data.postcode
+    if (postcodeValue.length >= 1 && houseValue.length >= 1) {
+      await addressFormRequest(postcodeValue, houseValue)
+        .then(({ data }) => {
+          this.setState({
+            fullAddressFormCheck: true,
+            houseNumber: data.addresses[0].building_number
+              ? data.addresses[0].building_number
+              : data.addresses[0].sub_building_name,
+            streetAddress: data.addresses[0].thoroughfare,
+            townCity: data.addresses[0].town_or_city,
+            county: data.addresses[0].county,
+            postcode: data.postcode
+          });
+        })
+        .catch(() => {
+          this.setState({
+            addressLookUpFail: true,
+            fullAddressFormCheck: true
+          });
         });
-      })
-      .catch(data => {
-        console.log("catch", data);
-      });
+    } else {
+      const addressFinderInput = document.querySelectorAll(
+        "[data-input-special=address-finder]"
+      );
+      for (let i = 0; i < addressFinderInput.length; i += 1) {
+        console;
+        const finderInputId = addressFinderInput[i].id;
+        const inputErrorDom = document.querySelector(
+          `[data-form-error=${finderInputId}]`
+        );
+        if (!addressFinderInput[i].value) {
+          inputErrorDom.innerHTML = "*Required";
+        }
+      }
+    }
+  }
+
+  addressLookupFail() {
+    return (
+      <p className="alert alert-danger">
+        There was a problem finding your address, please add your adress in
+        manually below
+      </p>
+    );
   }
 
   fullAddressForm() {
     return (
       <div>
+        {this.state.addressLookUpFail ? this.addressLookupFail() : ""}
         <fieldset>
           <InputRow
             id="houseNumber"
@@ -98,6 +127,7 @@ class PropertyAddress extends Component {
           label="House/Flat Number Or Name"
           placeHolder="Flat 3 / 8 / Green House"
           required={true}
+          dataAttributeSpecial="address-finder"
         />
         <InputRow
           id="postcodeSearch"
@@ -105,6 +135,7 @@ class PropertyAddress extends Component {
           label="Postcode"
           placeHolder="AL3 3DE"
           required={true}
+          dataAttributeSpecial="address-finder"
         />
 
         <button

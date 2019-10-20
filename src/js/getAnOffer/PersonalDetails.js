@@ -8,7 +8,6 @@ class PersonalDetails extends Component {
     super(props);
 
     this.state = { ...props };
-    console.log(this.state.userDetails);
   }
   render() {
     return (

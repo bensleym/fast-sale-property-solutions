@@ -3,6 +3,7 @@ import PersonalDetails from "./PersonalDetails";
 import SubmitBtn from "../uiComponents/SubmitBtn";
 import PropertyDetails from "./PropertyDetails";
 import PropertyAddress from "./PropertyAddress";
+import FormControl from "./../utils/FormControl";
 
 class GetAnOfferForm extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class GetAnOfferForm extends Component {
     this.state = this.props.userDetails;
   }
   handleSubmit() {
-    console.log("Submitted");
+    new FormControl();
   }
 
   handleChange() {
@@ -21,7 +22,15 @@ class GetAnOfferForm extends Component {
   render() {
     return (
       <div className="get-an-offer-form">
-        <form onSubmit={this.handleChange()} onChange={this.handleChange()}>
+        <form
+          onSubmit={e => {
+            e.preventDefault();
+            this.handleSubmit();
+          }}
+          onChange={e => {
+            e.preventDefault();
+          }}
+        >
           <PersonalDetails userDetails={this.state} />
           <PropertyAddress />
           <PropertyDetails />

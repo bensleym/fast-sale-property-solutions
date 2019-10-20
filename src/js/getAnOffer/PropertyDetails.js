@@ -88,6 +88,8 @@ class PropertyDetails extends Component {
               id="securedLoans"
               name="securedLoans"
               className="select-row__input"
+              data-required={true}
+              defaultValue=""
               onChange={e => {
                 this.handleSecuredLoans(e);
               }}
@@ -95,12 +97,16 @@ class PropertyDetails extends Component {
                 this.handleSecuredLoans(e);
               }}
             >
-              <option value="" disabled selected>
+              <option value="" disabled>
                 Please Choose
               </option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
             </select>
+            <span
+              className="form-error-handling__error-message"
+              data-form-error="securedLoans"
+            ></span>
           </label>
         </div>
       </fieldset>

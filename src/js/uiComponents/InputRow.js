@@ -1,15 +1,26 @@
 import React, { Component } from "react";
+import FormErrorHandling from "./../utils/FormErrorHandling";
 
 class InputRow extends Component {
   constructor(props) {
     super(props);
     this.state = { ...props };
-    console.log(this.state);
   }
 
   inputChangedHandler(event) {
-    console.log(this.state);
     this.setState({ value: event.target.value });
+    new FormErrorHandling();
+  }
+
+  HandleErrorDom() {
+    if (this.props.required) {
+      return (
+        <span
+          className="form-error-handling__error-message"
+          data-form-error={this.props.id}
+        ></span>
+      );
+    }
   }
 
   createInputRow() {
@@ -28,7 +39,10 @@ class InputRow extends Component {
             value={this.state.value}
             onChange={event => this.inputChangedHandler(event)}
             data-required={this.props.required}
+            data-form-control
+            data-input-special={this.props.dataAttributeSpecial}
           />
+          {this.HandleErrorDom()}
         </label>
       </div>
     );
