@@ -4,20 +4,29 @@ import SubmitBtn from "../uiComponents/SubmitBtn";
 import PropertyDetails from "./PropertyDetails";
 import PropertyAddress from "./PropertyAddress";
 import FormControl from "./../utils/FormControl";
+import Firestore from "./../utils/Firestore";
+import Offer from "./Offer";
 
 class GetAnOfferForm extends Component {
+  state = {};
   constructor(props) {
     super(props);
 
-    this.state = this.props.userDetails;
+    this.state = {
+      ...this.props.userDetails,
+      suppliedOffer: false
+    };
     this.fsps = window.fsps;
+    this.collectedData = {};
   }
+
   handleSubmit() {
     new FormControl();
     this.checkFullForm();
 
     if (this.fsps.fullAddress && this.fsps.formValid) {
-      console.log("complete");
+      this.collectData();
+      this.setState({ suppliedOffer: true });
     }
   }
 
@@ -26,7 +35,6 @@ class GetAnOfferForm extends Component {
   }
 
   checkFullForm() {
-    console.log("help");
     const addressDetailsId = document.getElementById("addressDetails");
 
     if (!this.fsps.fullAddress) {
@@ -37,46 +45,76 @@ class GetAnOfferForm extends Component {
   }
 
   collectData() {
-    const userTitle = document.getElementById("personalTitle");
-    const userFirstName = document.getElementById("firstName");
-    const userLastName = document.getElementById("lastName");
-    const userPhone = document.getElementById("number");
-    const userEmail = document.getElementById("email");
+    const userTitle = document.getElementById("personalTitle").value;
+    const userFirstName = document.getElementById("firstName").value;
+    const userLastName = document.getElementById("lastName").value;
+    const userPhone = document.getElementById("number").value;
+    const userEmail = document.getElementById("email").value;
 
-    const addressNumber = document.getElementById("houseNumber");
-    const addressStreet = document.getElementById("street");
-    const addressTownCity = document.getElementById("townCity");
-    const addressCounty = document.getElementById("county");
-    const addressPostcode = document.getElementById("postCode");
+    const addressNumber = document.getElementById("houseNumber").value;
+    const addressStreet = document.getElementById("street").value;
+    const addressTownCity = document.getElementById("townCity").value;
+    const addressCounty = document.getElementById("county").value;
+    const addressPostcode = document.getElementById("postCode").value;
 
-    const propertyTimeToSell = document.getElementById("timeToSell");
-    const propertyReasonToSell = document.getElementById("reasonToSell");
-    const propertyPropertyValue = document.getElementById("propertyValue");
+    const propertyTimeToSell = document.getElementById("timeToSell").value;
+    const propertyReasonToSell = document.getElementById("reasonToSell").value;
+    const propertyPropertyValue = document.getElementById("propertyValue")
+      .value;
     const propertyOutstandingMortgage = document.getElementById(
       "outstandingMortgage"
-    );
-    const propertySecuredLoans = document.getElementById("securedLoans");
+    ).value;
+    const propertySecuredLoans = document.getElementById("securedLoans").value;
+    const propertySecuredLoansAmmount = document.getElementById(
+      "securedLoansValue"
+    )
+      ? document.getElementById("securedLoansValue").value
+      : 0;
 
-    this.setState({
-      userTitle,
-      userFirstName,
-      userLastName,
-      userPhone,
-      userEmail,
-      addressNumber,
-      addressStreet,
-      addressTownCity,
-      addressCounty,
-      addressPostcode,
-      propertyTimeToSell,
-      propertyReasonToSell,
-      propertyPropertyValue,
-      propertyOutstandingMortgage,
-      propertySecuredLoans
-    });
+    const perc = 0.25 * propertyPropertyValue;
+    const result = propertyPropertyValue - perc;
+
+    const preliminaryOffer = Math.round(result * 100) / 100;
+
+    const userDetails = {
+      personalDetails: {
+        title: userTitle,
+        firstName: userFirstName,
+        lastName: userLastName,
+        phone: userPhone,
+        email: userEmail
+      },
+      addressDetails: {
+        street: `${addressNumber} ${addressStreet}`,
+        townCity: addressTownCity,
+        county: addressCounty,
+        postcode: addressPostcode
+      },
+      propertyDetails: {
+        timeToSell: propertyTimeToSell,
+        reasonToSell: propertyReasonToSell,
+        propertyValue: propertyPropertyValue,
+        outstandingMortgage: propertyOutstandingMortgage,
+        securedLoans: propertySecuredLoans,
+        securedLoansAmmount: propertySecuredLoansAmmount
+      },
+      description: `Time in which to sell: ${propertyTimeToSell}, 
+                    Reason for sale: ${propertyReasonToSell}, 
+                    Property value: £${propertyPropertyValue}, 
+                    Outstanding mortgage: £${propertyOutstandingMortgage}, 
+                    Secured loans against the property: ${propertySecuredLoans}, 
+                    Secured loans ammount: £${propertySecuredLoansAmmount}, 
+                    preliminary Offer: £${preliminaryOffer}`,
+      preliminaryOffer
+    };
+
+    this.collectData = userDetails;
   }
 
   render() {
+    if (this.state.suppliedOffer) {
+      return <Offer offerDetails={this.collectData} />;
+    }
     return (
       <div className="get-an-offer-form">
         <form

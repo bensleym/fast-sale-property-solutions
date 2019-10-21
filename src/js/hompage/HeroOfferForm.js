@@ -36,18 +36,21 @@ class HeroOfferForm extends Component {
             type="text"
             label="First Name"
             placeHolder="First Name"
+            value=""
           />
           <InputRow
             id="lastName"
             type="text"
             label="Last Name"
             placeHolder="Last Name"
+            value=""
           />
           <InputRow
             id="phone"
             type="number"
             label="Phone"
             placeHolder="Phone number"
+            value=""
           />
 
           <SubmitBtn value="Get an offer" />
