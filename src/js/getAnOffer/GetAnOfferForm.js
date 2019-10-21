@@ -17,7 +17,7 @@ class GetAnOfferForm extends Component {
     this.checkFullForm();
 
     if (this.fsps.fullAddress && this.fsps.formValid) {
-      console.log("Form complete");
+      console.log("complete");
     }
   }
 
@@ -34,6 +34,46 @@ class GetAnOfferForm extends Component {
     } else {
       addressDetailsId.classList.remove("property-address__error");
     }
+  }
+
+  collectData() {
+    const userTitle = document.getElementById("personalTitle");
+    const userFirstName = document.getElementById("firstName");
+    const userLastName = document.getElementById("lastName");
+    const userPhone = document.getElementById("number");
+    const userEmail = document.getElementById("email");
+
+    const addressNumber = document.getElementById("houseNumber");
+    const addressStreet = document.getElementById("street");
+    const addressTownCity = document.getElementById("townCity");
+    const addressCounty = document.getElementById("county");
+    const addressPostcode = document.getElementById("postCode");
+
+    const propertyTimeToSell = document.getElementById("timeToSell");
+    const propertyReasonToSell = document.getElementById("reasonToSell");
+    const propertyPropertyValue = document.getElementById("propertyValue");
+    const propertyOutstandingMortgage = document.getElementById(
+      "outstandingMortgage"
+    );
+    const propertySecuredLoans = document.getElementById("securedLoans");
+
+    this.setState({
+      userTitle,
+      userFirstName,
+      userLastName,
+      userPhone,
+      userEmail,
+      addressNumber,
+      addressStreet,
+      addressTownCity,
+      addressCounty,
+      addressPostcode,
+      propertyTimeToSell,
+      propertyReasonToSell,
+      propertyPropertyValue,
+      propertyOutstandingMortgage,
+      propertySecuredLoans
+    });
   }
 
   render() {
