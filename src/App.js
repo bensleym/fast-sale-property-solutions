@@ -9,6 +9,7 @@ import WhereWeCanHelp from "./js/views/WhereWeCanHelp";
 import WhyChooseUs from "./js/views/WhyChooseUs";
 import Homepage from "./js/views/HomePage";
 import Footer from "./js/footer/Footer";
+import Offer from "./js/views/Offer";
 
 window.fsps = {};
 
@@ -24,6 +25,7 @@ const App = () => {
           <StandardAndEthics path="/standards-and-ethics" />
           <WhereWeCanHelp path="/where-we-can-help/*" />
           <WhyChooseUs path="why-choose-us" />
+          <Offer path="/offer" />
         </Router>
         <Footer />
       </div>

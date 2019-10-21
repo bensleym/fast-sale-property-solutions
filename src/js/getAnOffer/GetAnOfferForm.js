@@ -4,8 +4,7 @@ import SubmitBtn from "../uiComponents/SubmitBtn";
 import PropertyDetails from "./PropertyDetails";
 import PropertyAddress from "./PropertyAddress";
 import FormControl from "./../utils/FormControl";
-import Firestore from "./../utils/Firestore";
-import Offer from "./Offer";
+import { navigate } from "@reach/router";
 
 class GetAnOfferForm extends Component {
   state = {};
@@ -13,8 +12,7 @@ class GetAnOfferForm extends Component {
     super(props);
 
     this.state = {
-      ...this.props.userDetails,
-      suppliedOffer: false
+      ...this.props.userDetails
     };
     this.fsps = window.fsps;
     this.collectedData = {};
@@ -26,7 +24,8 @@ class GetAnOfferForm extends Component {
 
     if (this.fsps.fullAddress && this.fsps.formValid) {
       this.collectData();
-      this.setState({ suppliedOffer: true });
+      console.log(this.collectedData);
+      navigate("/offer", { state: this.collectedData });
     }
   }
 
@@ -108,13 +107,10 @@ class GetAnOfferForm extends Component {
       preliminaryOffer
     };
 
-    this.collectData = userDetails;
+    this.collectedData = userDetails;
   }
 
   render() {
-    if (this.state.suppliedOffer) {
-      return <Offer offerDetails={this.collectData} />;
-    }
     return (
       <div className="get-an-offer-form">
         <form

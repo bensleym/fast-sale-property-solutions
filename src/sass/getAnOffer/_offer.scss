@@ -1,0 +1,41 @@
+.offer {
+  margin-bottom: 300px;
+
+  &__title {
+    padding: 50px 0 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $gray-200;
+  }
+  &__offer-info {
+    width: 100%;
+    padding: 20px;
+    background: $gray-200;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  &__message {
+    font-size: $font-size-lg;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__cash-offer {
+    font-size: $font-size-lg;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+
+  &__accept-btn {
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  &__next-steps {
+    p {
+      margin-top: 5px;
+    }
+  }
+}

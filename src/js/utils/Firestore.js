@@ -10,8 +10,9 @@ export const getFirestore = async collection => {
   return dataOjb;
 };
 
-export const addFirestore = async (dataObj, collection) => {
+const addFirestore = async (dataObj, collection) => {
+  console.log(dataObj, collection);
   await firestore.collection(collection).add(dataObj);
 };
 
-export default { getFirestore, addFirestore };
+export default addFirestore;
