@@ -1,4 +1,13 @@
 .usps-home {
   margin-top: 40px;
-  display: flex;
+  padding: 50px 0 50px 0;
+  width: 100%;
+
+  &__header {
+    margin-bottom: 50px;
+  }
+
+  &__usps {
+    display: flex;
+  }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "@reach/router";
 import LogoMd from "../../img/header/fast-sale-property-solutions-logo-md.png";
-import LogoSm from "../../img/header/fast-sale-property-solutions-logo-sm.png";
+import LogoSm from "../../img/header/fast-sale-property-solutions-logo-sm-white-alt.png";
 import Navigation from "../navigation/Navigation";
 
 class Header extends Component {
@@ -11,7 +11,7 @@ class Header extends Component {
         <div className="header--flex container">
           <div className="header__logo">
             <Link to="/">
-              <img src={LogoMd} alt="Fast Sale Property Solutions" />
+              <img src={LogoSm} alt="Fast Sale Property Solutions" />
             </Link>
           </div>
           <div className="header__navigation">

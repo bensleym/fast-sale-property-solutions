@@ -4,8 +4,11 @@ import UspBlock from "../uiComponents/UspBlock";
 class UspsHome extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="usps-home">
+      <section className="container usps-home">
+        <header className="usps-home__header">
+          <h2>Benefits of using Fast Sale Property Solutions...</h2>
+        </header>
+        <div className="usps-home__usps">
           <UspBlock icon="far fa-clock">
             <h2 className="usp-block__title">Quick Sale Of Your Property</h2>
             <p className="usp-block__text">
@@ -38,7 +41,7 @@ class UspsHome extends Component {
             </p>
           </UspBlock>
         </div>
-      </div>
+      </section>
     );
   }
 }

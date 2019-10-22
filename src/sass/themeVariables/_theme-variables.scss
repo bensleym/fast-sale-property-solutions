@@ -1,16 +1,16 @@
-@include google-font("Roboto", "300,400,700");
-@include google-font("Lato", "300,400,700");
+@include google-font("Open Sans", "300,400,700");
+@include google-font("Montserrat", "300,400,700");
 
 // Font family
-$font-family-heading: "Lato";
+$font-family-heading: "Montserrat";
 $font-heading-weight: 400;
-$font-family-body: "Roboto";
+$font-family-body: "Open Sans";
 $font-body-weight: 400;
 
 // Font size
-$font-sm: 12px;
-$font-md: 14px;
-$font-lg: 16px;
+$font-sm: 14px;
+$font-md: 16px;
+$font-lg: 18px;
 
 $font-h1: 40px;
 $font-h2: 30px;

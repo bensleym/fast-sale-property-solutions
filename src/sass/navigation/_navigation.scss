@@ -10,16 +10,10 @@
     display: block;
     padding: 20px;
     text-decoration: none;
-    color: #000;
-    border-right: 1px solid #eee;
-
-    &:last-child {
-      border-right: none;
-    }
+    color: $white;
 
     &:hover {
-      background: #f7f7f7;
-      color: $black;
+      color: $white;
       text-decoration: none;
     }
   }

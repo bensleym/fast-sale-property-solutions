@@ -24,7 +24,6 @@ class GetAnOfferForm extends Component {
 
     if (this.fsps.fullAddress && this.fsps.formValid) {
       this.collectData();
-      console.log(this.collectedData);
       navigate("/offer", { state: this.collectedData });
     }
   }

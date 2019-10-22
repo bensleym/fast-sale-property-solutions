@@ -47,7 +47,7 @@ class HeroOfferForm extends Component {
           />
           <InputRow
             id="phone"
-            type="number"
+            type="text"
             label="Phone"
             placeHolder="Phone number"
             value=""

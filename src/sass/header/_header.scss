@@ -3,12 +3,14 @@
   display: flex;
   border-bottom: 1px solid #ccc;
   padding: 10px;
+  position: absolute;
+  background: none;
 
   &__logo {
     flex-basis: 20%;
 
     img {
-      max-width: 100%;
+      max-width: 70%;
     }
   }
 

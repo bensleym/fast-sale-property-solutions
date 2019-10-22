@@ -6,8 +6,8 @@ class FooterLegals extends Component {
       <div className="footer-legals">
         <div className="container">
           <p className="footer-legals__text">
-            Fast Sale Property Solutions trading as 2019 Bensley &amp; Charteris
-            Ltd. Address: 8 Cheviots, Hemel Hempstead, Hertfordshire, HP2 5RD
+            2019 Fast Sale Property Solutions. Address: 8 Cheviots, Hemel
+            Hempstead, Hertfordshire, HP2 5RD
           </p>
         </div>
       </div>
