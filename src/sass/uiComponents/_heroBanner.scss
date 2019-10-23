@@ -1,0 +1,46 @@
+.hero-banner {
+  width: 100%;
+  height: 550px;
+  padding-top: 120px;
+
+  &--home {
+    background: url("./img/homepage/hero.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  &--get-an-offer {
+    background: url("./img/homepage/hero.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  &--where-we-can-help {
+    background: url("./img/homepage/hero.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  &--why-choose-us {
+    background: url("./img/homepage/hero.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  &--standards-and-ethics {
+    background: url("./img/homepage/hero.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  &--contact-us {
+    background: url("./img/homepage/hero.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  &__title {
+    color: $white;
+    margin: 0;
+    padding: 50px 0 20px;
+  }
+
+  &__intro {
+    color: $white;
+    padding-right: 100px;
+  }
+}

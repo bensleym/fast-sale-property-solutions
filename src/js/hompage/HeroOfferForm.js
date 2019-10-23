@@ -37,6 +37,7 @@ class HeroOfferForm extends Component {
             label="First Name"
             placeHolder="First Name"
             value=""
+            required={false}
           />
           <InputRow
             id="lastName"
@@ -44,6 +45,7 @@ class HeroOfferForm extends Component {
             label="Last Name"
             placeHolder="Last Name"
             value=""
+            required={false}
           />
           <InputRow
             id="phone"
@@ -51,6 +53,7 @@ class HeroOfferForm extends Component {
             label="Phone"
             placeHolder="Phone number"
             value=""
+            required={false}
           />
 
           <SubmitBtn value="Get an offer" />

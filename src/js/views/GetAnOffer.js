@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import GetAnOfferHeader from "../getAnOffer/GetAnOfferHeader";
 import GetAnOfferForm from "../getAnOffer/GetAnOfferForm";
+import HeroBanner from "../uiComponents/HeroBanner";
 
 class GetAnOffer extends Component {
   constructor(props) {
@@ -11,9 +11,22 @@ class GetAnOffer extends Component {
 
   render() {
     return (
-      <div className="container">
-        <GetAnOfferHeader />
-        <GetAnOfferForm userDetails={this.state} />
+      <div>
+        <HeroBanner
+          cssModifier="get-an-offer"
+          title="Get An Offer"
+          offerFormDisplay={false}
+        >
+          <p className="hero-banner__intro">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            tristique tincidunt mi efficitur suscipit. Nam tristique enim
+            ligula, porttitor blandit metus molestie quis. Integer commodo
+            sapien justo, at sollicitudin odio dignissim vitae.{" "}
+          </p>
+        </HeroBanner>
+        <div className="container">
+          <GetAnOfferForm userDetails={this.state} />
+        </div>
       </div>
     );
   }

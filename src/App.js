@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { render } from "react-dom";
 import Header from "./js/header/Header";
-import { Router, Link } from "@reach/router";
+import { Router } from "@reach/router";
 import ContactUs from "./js/views/ContactUs";
 import GetAnOffer from "./js/views/GetAnOffer";
 import StandardAndEthics from "./js/views/StandardsAndEthics";

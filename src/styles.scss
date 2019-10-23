@@ -16,6 +16,7 @@
 @import "./sass/uiComponents/sideNavigation";
 @import "./sass/uiComponents/sideNavigationLink";
 @import "./sass/uiComponents/selectRow";
+@import "./sass/uiComponents/heroBanner";
 
 // Utils
 @import "./sass/utils/formErrorHandling";
@@ -28,7 +29,6 @@
 
 // Page Content
 // Home Page
-@import "./sass/homepage/heroHome";
 @import "./sass/homepage/heroOfferForm";
 @import "./sass/homepage/uspsHome";
 @import "./sass/homepage/introHome";
@@ -42,6 +42,7 @@
 @import "./sass/whereWeCanHelp/whereWeCanHelpContent";
 
 // Get An Offer
+@import "./sass/getAnOffer/getAnOfferHero";
 @import "./sass/getAnOffer/getAnOfferHeader";
 @import "./sass/getAnOffer/getAnOfferForm";
 @import "./sass/getAnOffer/formHeader";
