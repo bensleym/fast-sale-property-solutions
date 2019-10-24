@@ -8,7 +8,7 @@ class WhereWeCanHelp extends Component {
       <div>
         <HeroBanner
           cssModifier="where-we-can-help"
-          title="WWhere We Can Help"
+          title="Where We Can Help"
           offerFormDisplay={false}
         >
           <p className="hero-banner__intro">
