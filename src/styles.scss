@@ -17,6 +17,7 @@
 @import "./sass/uiComponents/sideNavigationLink";
 @import "./sass/uiComponents/selectRow";
 @import "./sass/uiComponents/heroBanner";
+@import "./sass/uiComponents/textareaRow";
 
 // Utils
 @import "./sass/utils/formErrorHandling";
@@ -48,3 +49,6 @@
 @import "./sass/getAnOffer/formHeader";
 @import "./sass/getAnOffer/propertyAddress";
 @import "./sass/getAnOffer/offer";
+
+// Contact Us
+@import "./sass/contactUs/contactUsForm";

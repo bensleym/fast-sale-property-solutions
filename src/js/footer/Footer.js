@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "@reach/router";
-import Logo from "../../img/header/fast-sale-property-solutions-logo-md.png";
+import Logo from "../../img/header/fast-sale-property-solutions-logo-sm-blue-alt.png";
 import FooterLegals from "./FooterLegals";
 
 class Footer extends Component {

@@ -1,0 +1,36 @@
+.textarea-row {
+  width: 100%;
+  margin-bottom: 15px;
+  display: block;
+
+  &__label {
+    display: block;
+    width: 100%;
+    font-size: $font-md;
+  }
+
+  &__required {
+    &::after {
+      content: "*";
+      color: $danger;
+      position: absolute;
+      padding-left: 2px;
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid $gray-300;
+    margin-top: 3px;
+
+    &::placeholder {
+      color: $gray-300;
+      font-weight: 300;
+      font-size: $font-md;
+    }
+  }
+}
