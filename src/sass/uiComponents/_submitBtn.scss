@@ -9,6 +9,10 @@
     color: $white;
     border: none;
     border-radius: 3px;
+
+    &:disabled {
+      background: $gray-300;
+    }
   }
 
   &__link {

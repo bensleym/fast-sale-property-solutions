@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import InputRow from "../uiComponents/InputRow";
 import FormHeader from "./FormHeader";
 import addressFormRequest from "./FindAddressAPI";
+import SubmitControlDisable from "../utils/SubmitControlDisable";
 
 class PropertyAddress extends Component {
   state = {
@@ -12,11 +13,13 @@ class PropertyAddress extends Component {
     window.fsps.fullAddress = false;
   }
 
-  async handleAddressFind() {
+  async handleAddressFind(e) {
     const postcodeValue = document.getElementById("postcodeSearch").value || "";
     const houseValue = document.getElementById("houseSearch").value || "";
 
     if (postcodeValue.length >= 1 && houseValue.length >= 1) {
+      e.currentTarget.disabled = true;
+
       await addressFormRequest(postcodeValue, houseValue)
         .then(({ data }) => {
           this.setState({
@@ -152,7 +155,7 @@ class PropertyAddress extends Component {
           className="submit-btn__link"
           onClick={e => {
             e.preventDefault();
-            this.handleManualAddress();
+            this.handleManualAddress(e);
           }}
         >
           Enter address manually
@@ -173,7 +176,7 @@ class PropertyAddress extends Component {
               className="submit-btn__btn"
               onClick={e => {
                 e.preventDefault();
-                this.handleAddressFind();
+                this.handleAddressFind(e);
               }}
             >
               Find Address

@@ -4,9 +4,10 @@ import TextareaRow from "../uiComponents/TextareaRow";
 import SubmitBtn from "../uiComponents/SubmitBtn";
 import FormControl from "../utils/FormControl";
 import contactUsAPI from "./contactUsAPI";
+import SubmitControlDisable from "../utils/SubmitControlDisable";
 
 class ContactUsForm extends Component {
-  async handleSubmit() {
+  async handleSubmit(e) {
     new FormControl();
     const emailSendTo = "mark@fastsalepropertysolutions.co.uk";
     const name = document.getElementById("contactName").value;
@@ -21,13 +22,17 @@ class ContactUsForm extends Component {
       phone,
       message
     };
-    await contactUsAPI(data, url)
-      .then(({ data }) => {
-        console.log(data);
-      })
-      .catch(() => {
-        console.log("fail");
-      });
+
+    if (window.fsps.formValid) {
+      SubmitControlDisable(e);
+      await contactUsAPI(data, url)
+        .then(({ data }) => {
+          console.log(data);
+        })
+        .catch(() => {
+          console.log("fail");
+        });
+    }
   }
   contactForm() {
     return (
@@ -36,11 +41,13 @@ class ContactUsForm extends Component {
         <form
           onSubmit={e => {
             e.preventDefault();
-            this.handleSubmit();
+            this.handleSubmit(e);
           }}
           onChange={e => {
             e.preventDefault();
           }}
+          name="contactForm"
+          id="contactForm"
         >
           <InputRow
             id="contactName"
@@ -73,7 +80,7 @@ class ContactUsForm extends Component {
             required={true}
           />
 
-          <SubmitBtn value="Send" />
+          <SubmitBtn value="Send" id="contactSubmitBtn" />
         </form>
       </div>
     );

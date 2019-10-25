@@ -5,6 +5,7 @@ import PropertyDetails from "./PropertyDetails";
 import PropertyAddress from "./PropertyAddress";
 import FormControl from "./../utils/FormControl";
 import { navigate } from "@reach/router";
+import SubmitControlDisable from "../utils/SubmitControlDisable";
 
 class GetAnOfferForm extends Component {
   state = {};
@@ -18,11 +19,12 @@ class GetAnOfferForm extends Component {
     this.collectedData = {};
   }
 
-  handleSubmit() {
+  handleSubmit(e) {
     new FormControl();
     this.checkFullForm();
 
     if (this.fsps.fullAddress && this.fsps.formValid) {
+      SubmitControlDisable(e);
       this.collectData();
       navigate("/offer", { state: this.collectedData });
     }
@@ -115,7 +117,7 @@ class GetAnOfferForm extends Component {
         <form
           onSubmit={e => {
             e.preventDefault();
-            this.handleSubmit();
+            this.handleSubmit(e);
           }}
           onChange={e => {
             e.preventDefault();
