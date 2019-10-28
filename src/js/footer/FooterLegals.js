@@ -6,8 +6,8 @@ class FooterLegals extends Component {
       <div className="footer-legals">
         <div className="container">
           <p className="footer-legals__text">
-            2019 Fast Sale Property Solutions. Address: 8 Cheviots, Hemel
-            Hempstead, Hertfordshire, HP2 5RD
+            2019 Fast Sale Property Solutions. Address: Sunnymeads, Hemel
+            Hempstead, Hertfordshire, HP2 6JH
           </p>
         </div>
       </div>
