@@ -10,6 +10,7 @@ import WhyChooseUs from "./js/views/WhyChooseUs";
 import Homepage from "./js/views/HomePage";
 import Footer from "./js/footer/Footer";
 import Offer from "./js/views/Offer";
+import CookieBanner from "./js/utils/CookieBanner";
 
 window.fsps = {};
 
@@ -28,6 +29,7 @@ const App = () => {
           <Offer path="/offer" />
         </Router>
         <Footer />
+        <CookieBanner />
       </div>
     </React.StrictMode>
   );
