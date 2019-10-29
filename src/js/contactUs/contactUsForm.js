@@ -3,19 +3,21 @@ import InputRow from "../uiComponents/InputRow";
 import TextareaRow from "../uiComponents/TextareaRow";
 import SubmitBtn from "../uiComponents/SubmitBtn";
 import FormControl from "../utils/FormControl";
-import contactUsAPI from "./contactUsAPI";
+import ContactUsAPI from "./ContactUsAPI";
 import SubmitControlDisable from "../utils/SubmitControlDisable";
+import ContactFormSuccess from "./ContactFormSuccess";
+import SubmitControlEnable from "../utils/SubmitControlEnable";
 
 class ContactUsForm extends Component {
+  state = {};
   async handleSubmit(e) {
     new FormControl();
-    const emailSendTo = "mark@fastsalepropertysolutions.co.uk";
     const name = document.getElementById("contactName").value;
     const email = document.getElementById("contactEmail").value;
     const phone = document.getElementById("contactPhone").value;
     const message = document.getElementById("contactMessage").value;
 
-    const url = `https://us-central1-fast-sale-property-solutions.cloudfunctions.net/sendMail?`;
+    const url = `https://us-central1-fast-sale-property-solutions.cloudfunctions.net/sendMail`;
     const data = {
       name,
       email,
@@ -25,19 +27,35 @@ class ContactUsForm extends Component {
 
     if (window.fsps.formValid) {
       SubmitControlDisable(e);
-      await contactUsAPI(data, url)
-        .then(({ data }) => {
-          console.log(data);
+
+      await ContactUsAPI(data, url)
+        .then(() => {
+          this.setState({ contactFormSuccess: true });
         })
         .catch(() => {
-          console.log("fail");
+          SubmitControlEnable();
+          this.setState({ contactFormError: true });
         });
     }
   }
+
+  formAlert() {
+    if (this.state.contactFormError) {
+      return (
+        <div className="contact-us-form__alert alert alert-danger">
+          There was a problem sending your message. Please try again later or
+          call us on: <strong>07753 686 480</strong>
+        </div>
+      );
+    }
+    return null;
+  }
+
   contactForm() {
     return (
-      <div className="contact-us-form container">
+      <div className="contact-us-form">
         <h2 className="contact-us-form__title">Send Us A Message</h2>
+        {this.formAlert()}
         <form
           onSubmit={e => {
             e.preventDefault();
@@ -86,6 +104,9 @@ class ContactUsForm extends Component {
     );
   }
   render() {
+    if (this.state.contactFormSuccess) {
+      return ContactFormSuccess();
+    }
     return this.contactForm();
   }
 }

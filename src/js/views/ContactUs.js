@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import HeroBanner from "../uiComponents/HeroBanner";
-import ContactUsForm from "../contactUs/contactUsForm";
+import ContactUsForm from "../contactUs/ContactUsForm";
+import ContactUsDetails from "../contactUs/ContactUsDetails";
 
 class ContactUs extends Component {
   render() {
@@ -19,7 +20,16 @@ class ContactUs extends Component {
           </p>
         </HeroBanner>
 
-        <ContactUsForm />
+        <div className="container">
+          <div className="row">
+            <div className="col-4">
+              <ContactUsDetails />
+            </div>
+            <div className="col-8">
+              <ContactUsForm />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

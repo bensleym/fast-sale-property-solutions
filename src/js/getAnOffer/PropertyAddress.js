@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import InputRow from "../uiComponents/InputRow";
 import FormHeader from "./FormHeader";
 import addressFormRequest from "./FindAddressAPI";
-import SubmitControlDisable from "../utils/SubmitControlDisable";
 
 class PropertyAddress extends Component {
   state = {

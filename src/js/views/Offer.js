@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import addFirestore from "./../utils/Firestore";
 import { navigate } from "@reach/router";
 import HeroBanner from "../uiComponents/HeroBanner";
+import OfferBox from "../offer/OfferBox";
 
 export default class Offer extends Component {
   constructor(props) {
     super(props);
+    window.scrollTo(0, 0);
     this.state = {
       ...this.props.location.state,
       offerAccepted: false
@@ -28,8 +30,9 @@ export default class Offer extends Component {
           cssModifier="offer"
           title="Offer"
           offerFormDisplay={false}
+          offerBox={true}
+          offerDetails={this.state}
         ></HeroBanner>
-        ;
         <div className="offer container">
           <h1 className="offer__title">This is your preliminary cash offer</h1>
           <div className="offer__offer-info">

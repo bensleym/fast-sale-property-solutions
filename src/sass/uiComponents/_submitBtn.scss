@@ -13,6 +13,19 @@
     &:disabled {
       background: $gray-300;
     }
+
+    &--no-send {
+      &#{&} {
+        display: none;
+      }
+    }
+
+    &--sending {
+      &#{&} {
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
   }
 
   &__link {

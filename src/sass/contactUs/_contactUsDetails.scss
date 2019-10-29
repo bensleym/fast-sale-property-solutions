@@ -1,0 +1,19 @@
+.contact-us-details {
+  padding-top: 50px;
+  width: 80%;
+
+  &__title {
+    padding: 0 0 20px;
+    border-bottom: 1px solid $gray-300;
+    margin-bottom: 20px;
+  }
+
+  &__address {
+    margin-bottom: 50px;
+  }
+
+  &__number {
+    font-size: $font-size-lg;
+    color: $font;
+  }
+}

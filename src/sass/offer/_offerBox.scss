@@ -1,0 +1,19 @@
+.offer-box {
+  width: 100%;
+  padding: 20px;
+  background: $white;
+  border-radius: 5px 5px 20px 20px;
+  margin-top: 50px;
+
+  &__message {
+    margin-top: 20px;
+  }
+
+  &__cash-offer {
+    background: $gray-200;
+    padding: 10px;
+    margin: 20px 0 20px;
+    font-size: $font-size-lg;
+    text-align: center;
+  }
+}
