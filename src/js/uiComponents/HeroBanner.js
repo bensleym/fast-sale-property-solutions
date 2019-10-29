@@ -5,7 +5,6 @@ import OfferBox from "../offer/OfferBox";
 class HeroBanner extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
   }
 
   cssClasses() {

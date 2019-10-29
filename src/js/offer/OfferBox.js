@@ -5,8 +5,6 @@ class OfferBox extends Component {
     super(props);
 
     this.state = props;
-
-    console.log(this.state.offerDetails);
   }
 
   render() {

@@ -11,7 +11,6 @@ export const getFirestore = async collection => {
 };
 
 const addFirestore = async (dataObj, collection) => {
-  console.log(dataObj, collection);
   await firestore.collection(collection).add(dataObj);
 };
 
