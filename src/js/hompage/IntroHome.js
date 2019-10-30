@@ -7,7 +7,7 @@ class IntroHome extends Component {
       <div className="intro-home">
         <div className="container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-lg-6 col-sm-12">
               <div className="intro-home__content">
                 <h2 className="intro-home__title">
                   Get A No Oblidation Instant Cash Offer Today
@@ -33,7 +33,7 @@ class IntroHome extends Component {
                 </p>
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-lg-6 col-sm-12">
               <div className="intro-home__content">
                 <h2 className="intro-home__title">What To Expect From Us</h2>
                 <ul className="intro-home__list">

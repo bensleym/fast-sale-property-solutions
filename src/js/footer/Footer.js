@@ -9,8 +9,8 @@ class Footer extends Component {
       <div className="footer">
         <div className="container">
           <div className="row">
-            <div className="col-3">
-              <Link to="/">
+            <div className="col-lg-3 col-sm-12">
+              <Link to="/" className="footer__link--logo">
                 <img
                   src={Logo}
                   alt="Fast Sale Property Solutions"
@@ -18,7 +18,7 @@ class Footer extends Component {
                 />
               </Link>
             </div>
-            <div className="col-3">
+            <div className="col-lg-3 col-sm-12">
               <h3 className="footer__list-title">Quick Links</h3>
               <ul className="footer__list">
                 <li className="footer__list-item">
@@ -38,7 +38,7 @@ class Footer extends Component {
                 </li>
               </ul>
             </div>
-            <div className="col-3">
+            <div className="col-lg-3 col-sm-12">
               <h3 className="footer__list-title">Company</h3>
               <ul className="footer__list">
                 <li className="footer__list-item">

@@ -28,11 +28,11 @@ class HeroBanner extends Component {
       <div className={this.cssClasses()}>
         <div className="container">
           <div className="row">
-            <div className="col-8">
+            <div className="col-lg-8 col-sm-12">
               <h1 className="hero-banner__title">{this.props.title}</h1>
               {this.props.children}
             </div>
-            <div className="col-4">
+            <div className="col-lg-4 col-sm-12">
               {this.offerForm()}
               {this.offerBox()}
             </div>

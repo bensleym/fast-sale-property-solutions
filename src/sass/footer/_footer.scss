@@ -4,6 +4,10 @@
 
   &__list-title {
     font-size: $font-h4;
+    margin-top: 20px;
+    @media screen and (min-width: $lg) {
+      margin-top: 20px;
+    }
   }
 
   &__list {
@@ -19,9 +23,24 @@
   &__link {
     color: $gray-300;
     text-decoration: none;
+
+    &--logo {
+      display: block;
+      width: 100%;
+      text-align: center;
+
+      @media screen and (min-width: $lg) {
+        text-align: left;
+      }
+    }
   }
 
   &__logo {
-    max-width: 80%;
+    max-width: 60%;
+    text-align: center;
+
+    @media screen and (min-width: $lg) {
+      max-width: 80%;
+    }
   }
 }
