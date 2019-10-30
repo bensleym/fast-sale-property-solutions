@@ -1,7 +1,7 @@
 .cookie-banner {
   width: 100%;
   padding: 20px 0;
-  background: $black;
+  background: rgba(0, 0, 0, 0.8);
 
   &--show {
     position: fixed;
@@ -13,8 +13,10 @@
   }
 
   &__content {
-    display: flex;
-    justify-content: space-around;
+    @media screen and (min-width: $lg) {
+      display: flex;
+      justify-content: space-around;
+    }
   }
 
   &__info {

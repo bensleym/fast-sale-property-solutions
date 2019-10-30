@@ -8,7 +8,7 @@
   left: -100%;
   z-index: 100;
   padding: 50px 0 0 0;
-  transition: left 2s;
+  transition: left 0.75s;
 
   @media screen and (min-width: $lg) {
     display: flex;
