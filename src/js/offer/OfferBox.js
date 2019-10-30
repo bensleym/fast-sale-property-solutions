@@ -1,10 +1,15 @@
 import React, { Component } from "react";
+import addFirestore from "./../utils/Firestore";
+import { navigate } from "@reach/router";
 
 class OfferBox extends Component {
   constructor(props) {
     super(props);
+  }
 
-    this.state = props;
+  submitOfferDetails() {
+    addFirestore(this.props, "contacts");
+    navigate("/offer-accepted");
   }
 
   render() {
@@ -15,18 +20,18 @@ class OfferBox extends Component {
           <p className="offer-box__message">
             We&apos;re here to help you{" "}
             <strong>
-              {this.state
-                ? this.state.offerDetails.personalDetails.firstName
+              {this.props
+                ? this.props.offerDetails.personalDetails.firstName
                 : ""}{" "}
-              {this.state
-                ? this.state.offerDetails.personalDetails.lastName
+              {this.props
+                ? this.props.offerDetails.personalDetails.lastName
                 : ""}
             </strong>
             . Your preliminary cash offer is:
           </p>
           <p className="offer-box__cash-offer">
             <strong>
-              £{this.state ? this.state.offerDetails.preliminaryOffer : ""}
+              £{this.props ? this.props.offerDetails.preliminaryOffer : ""}
             </strong>
           </p>
         </div>

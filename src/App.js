@@ -11,6 +11,7 @@ import Homepage from "./js/views/HomePage";
 import Footer from "./js/footer/Footer";
 import Offer from "./js/views/Offer";
 import CookieBanner from "./js/utils/CookieBanner";
+import OfferAccepted from "./js/views/OfferAccepted";
 
 window.fsps = {};
 
@@ -27,6 +28,7 @@ const App = () => {
           <WhereWeCanHelp path="/where-we-can-help/*" />
           <WhyChooseUs path="why-choose-us" />
           <Offer path="/offer" />
+          <OfferAccepted path="/offer-accepted" />
         </Router>
         <Footer />
         <CookieBanner />

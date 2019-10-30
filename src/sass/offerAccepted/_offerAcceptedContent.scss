@@ -1,0 +1,14 @@
+.offer-accepted-content {
+  margin-bottom: 300px;
+
+  &__title {
+    padding: 50px 0 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $gray-200;
+  }
+  &__next-steps {
+    p {
+      margin-top: 5px;
+    }
+  }
+}
