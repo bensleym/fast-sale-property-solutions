@@ -7,10 +7,39 @@
   background: none;
 
   &__logo {
-    flex-basis: 20%;
+    text-align: center;
+
+    @media screen and (min-width: $lg) {
+      flex-basis: 20%;
+    }
 
     img {
-      max-width: 70%;
+      max-width: 40%;
+
+      @media screen and (min-width: $md) {
+        max-width: 30%;
+      }
+
+      @media screen and (min-width: $lg) {
+        max-width: 70%;
+      }
+    }
+  }
+
+  &__menu {
+    color: $white;
+    font-size: $font-size-lg;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0;
+    background: none;
+    border: none;
+
+    &#{&} {
+      @media screen and (min-width: $lg) {
+        display: none;
+      }
     }
   }
 
@@ -19,6 +48,8 @@
   }
 
   &--flex {
-    display: flex;
+    @media screen and (min-width: $lg) {
+      display: flex;
+    }
   }
 }

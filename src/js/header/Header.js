@@ -1,13 +1,22 @@
 import React, { Component } from "react";
 import { Link } from "@reach/router";
-import LogoMd from "../../img/header/fast-sale-property-solutions-logo-md.png";
 import LogoSm from "../../img/header/fast-sale-property-solutions-logo-sm-white-alt.png";
 import Navigation from "../navigation/Navigation";
+import MenuControl from "../utils/MenuControl";
 
 class Header extends Component {
   render() {
     return (
       <header className="header">
+        <button
+          className="header__menu"
+          onClick={() => {
+            MenuControl.menuOpen();
+          }}
+        >
+          <span className="fas fa-bars "></span>
+        </button>
+
         <div className="header--flex container">
           <div className="header__logo">
             <Link to="/">
