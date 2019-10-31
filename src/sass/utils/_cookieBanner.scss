@@ -21,7 +21,7 @@
 
   &__info {
     color: $white;
-    font-size: $font-size-sm;
+    font-size: $font-sm;
     padding-right: 75px;
   }
 
@@ -32,7 +32,7 @@
     background: none;
     border: 1px solid $white;
     color: $white;
-    font-size: $font-size-sm;
+    font-size: $font-sm;
 
     &:hover {
       background: $white;

@@ -22,10 +22,10 @@ class ContactUs extends Component {
 
         <div className="container">
           <div className="row">
-            <div className="col-4">
+            <div className="col-lg-4 col-sm-12">
               <ContactUsDetails />
             </div>
-            <div className="col-8">
+            <div className="col-lg-8 col-sm-12">
               <ContactUsForm />
             </div>
           </div>

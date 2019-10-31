@@ -1,21 +1,23 @@
 import React, { Component } from "react";
 import HeroBanner from "../uiComponents/HeroBanner";
+import WhyChooseUsContent from "../whyChooseUs/WhyChooseUsContent";
 
 class WhyChooseUs extends Component {
   render() {
     return (
-      <HeroBanner
-        cssModifier="why-choose-us"
-        title="Why Choose Us"
-        offerFormDisplay={false}
-      >
-        <p className="hero-banner__intro">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          tristique tincidunt mi efficitur suscipit. Nam tristique enim ligula,
-          porttitor blandit metus molestie quis. Integer commodo sapien justo,
-          at sollicitudin odio dignissim vitae.{" "}
-        </p>
-      </HeroBanner>
+      <div>
+        <HeroBanner
+          cssModifier="why-choose-us"
+          title="Why Choose Us"
+          offerFormDisplay={false}
+        >
+          <p className="hero-banner__intro">
+            One of the fastest growing property investor networks with solutions
+            tailored to meet our clients needs.
+          </p>
+        </HeroBanner>
+        <WhyChooseUsContent />
+      </div>
     );
   }
 }

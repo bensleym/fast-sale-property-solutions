@@ -66,9 +66,11 @@
 
   &__intro {
     color: $white;
+    font-size: $font-md;
 
     @media screen and (min-width: $lg) {
       padding-right: 100px;
+      font-size: $font-lg;
     }
   }
 }

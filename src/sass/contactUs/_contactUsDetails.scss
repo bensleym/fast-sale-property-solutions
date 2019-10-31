@@ -1,6 +1,10 @@
 .contact-us-details {
   padding-top: 50px;
-  width: 80%;
+  width: 100%;
+
+  @media screen and (min-width: $lg) {
+    width: 80%;
+  }
 
   &__title {
     padding: 0 0 20px;
@@ -13,7 +17,7 @@
   }
 
   &__number {
-    font-size: $font-size-lg;
+    font-size: $font-lg;
     color: $font;
   }
 }

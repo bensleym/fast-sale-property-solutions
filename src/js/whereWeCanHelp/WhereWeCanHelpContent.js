@@ -11,33 +11,16 @@ import SideNavigation from "../uiComponents/SideNavigation";
 import WhereWeCanHelpHome from "./views/WhereWeCanHelpHome";
 
 class WhereWeCanHelpContent extends Component {
-  createNavigation() {
-    const data = {
-      linkOne: {
-        id: "linkOne",
-        label: "Link One",
-        url: "/link-one"
-      },
-      linkTwo: {
-        id: "linkTwo",
-        label: "Link Two",
-        url: "/link-two"
-      }
-    };
-
-    return data;
-  }
-
   render() {
     return (
       <div className="where-we-can-help-content">
         <div className="container">
           <div className="row">
-            <div className="col-4">
+            <div className="col-lg-4 col-sm-12">
               <SideNavigation />
             </div>
-            <div className="where-we-can-help-content__info col-8">
-              <Router primary={false}>
+            <div className="where-we-can-help-content__info col-lg-8 col-sm-12">
+              <Router>
                 <WhereWeCanHelpHome path="/" />
                 <FinancialDifficulties path="financial-difficulties" />
                 <ProblemsPayingYourMortgage path="problems-paying-your-mortgage" />
