@@ -1,16 +1,26 @@
 import React from "react";
+import { Link } from "@reach/router";
 
 const WhereWeCanHelpHome = () => {
   return (
     <div>
-      <h1>Where we can help</h1>
+      <h1>A solution to meet all needs</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper
-        quis lacus lobortis pharetra. Cras eu blandit enim. Morbi ut interdum
-        nisi. Integer id est rhoncus urna placerat feugiat. Quisque mollis orci
-        et lorem lacinia, in vehicula purus bibendum. Nunc pulvinar viverra
-        laoreet. Etiam maximus lectus nec molestie varius. Fusce nec mauris
-        dolor.
+        There are multiple reasons for needing to sell your property fast. Some
+        of these reasons could be down to financial difficulties that were
+        forced upon you to divorce or repossession.
+      </p>
+
+      <p>
+        We have experience dealing with all kinds of situations. We understand
+        that it’s a difficult time but there’s no need to feel embarrassed about
+        your situation. Take a look at are articles to see how we can help you
+        out of your situation.
+      </p>
+
+      <p>
+        <Link to="/contact-us">Contact us</Link> today for a free confidential
+        chat to discuss your possible solution.
       </p>
     </div>
   );

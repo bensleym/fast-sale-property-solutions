@@ -1,7 +1,6 @@
 .header {
   width: 100%;
   display: flex;
-  border-bottom: 1px solid #ccc;
   padding: 10px;
   position: absolute;
   background: none;
@@ -21,7 +20,7 @@
       }
 
       @media screen and (min-width: $lg) {
-        max-width: 70%;
+        max-width: 80%;
       }
     }
   }

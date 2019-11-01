@@ -6,35 +6,54 @@ class Repossession extends Component {
       <div>
         <h1>Repossession</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-          ullamcorper quis lacus lobortis pharetra. Cras eu blandit enim. Morbi
-          ut interdum nisi. Integer id est rhoncus urna placerat feugiat.
-          Quisque mollis orci et lorem lacinia, in vehicula purus bibendum. Nunc
-          pulvinar viverra laoreet. Etiam maximus lectus nec molestie varius.
-          Fusce nec mauris dolor.
+          Repossession is one of the worst outcomes when having financial
+          difficulties. With repossession at an all time high, don’t be the one
+          to lose everything. You lose more than just your home.
         </p>
+        <p>
+          Being repossessed is more than just having your property taken from
+          you. If you are repossessed your name will be added to the Possessions
+          Register. All major credit agencies will be notified of your
+          repossession and your credit rating will be adversely affected.
+        </p>
+        <p>
+          You will subsequently have problems with lenders lending to you and
+          you may never qualify for a loan or mortgage again.
+        </p>
+        <p>
+          All the past years of hard work building up your family home will be
+          gone. You and your family will have to find new accommodation. So it’s
+          in your best interest to stop repossession at all costs, it doesn’t
+          just affect the present but the future as well.
+        </p>
+        <p>The basic court repossession process is:</p>
+        <ul>
+          <li>
+            Summons for possession - A date and time is given for the hearing.
+          </li>
+          <li>
+            The hearing - The usual outcome to this is a possession order which
+            is usually up to two months.
+          </li>
+          <li>
+            Bailiffs warrant - A 14 day notice will be issued and you could be
+            forcibly removed from your home. The only way to stop this at this
+            point is to immediately pay your arrears or in some cases the whole
+            mortgage loan in full.
+          </li>
+        </ul>
 
         <p>
-          Vestibulum sem diam, sollicitudin a fermentum ac, bibendum et erat.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et
-          malesuada fames ac ante ipsum primis in faucibus. Nam commodo, ipsum
-          eu tempus ornare, sapien augue euismod odio, eget vestibulum augue
-          tellus at ante. Fusce eu tellus vel lectus congue facilisis. Integer
-          convallis lacinia feugiat. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus. Donec tincidunt cursus
-          ultricies. Suspendisse nec tincidunt augue, non vestibulum purus.
-          Suspendisse non libero ut lorem gravida rutrum in et tortor. Donec
-          nisi est, sollicitudin sagittis ante eget, molestie lacinia eros. Sed
-          non consectetur risus. Donec ac posuere est. Vestibulum ante ipsum
-          primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+          This is where Fast Sale Property Solutions can help! We can help stop
+          repossession at any point. We have cash buyers within our network
+          ready to purchase your property straight away. So all you need to do
+          is agree to sell your property to one of our cash buyers and then you
+          can obtain a stay of possession from the court. The sale of the
+          property can then be completed in 28 days avoiding repossession.
         </p>
-
         <p>
-          Nullam tempus elit eget ante sagittis faucibus. Sed luctus vitae mi
-          vitae finibus. Vestibulum blandit enim eget consequat accumsan.
-          Quisque a fermentum sem, vel lobortis sapien. Fusce lectus ipsum,
-          scelerisque at nisi eu, varius rhoncus urna. Vivamus libero felis,
-          rutrum non purus sed, lacinia ultricies enim. Proin ut euismod nibh.
+          Best course of action is to act now and prevent repossession from ever
+          happening.
         </p>
       </div>
     );

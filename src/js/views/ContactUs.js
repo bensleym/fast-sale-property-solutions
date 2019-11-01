@@ -4,6 +4,10 @@ import ContactUsForm from "../contactUs/ContactUsForm";
 import ContactUsDetails from "../contactUs/ContactUsDetails";
 
 class ContactUs extends Component {
+  constructor() {
+    super();
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div>

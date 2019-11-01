@@ -1,0 +1,14 @@
+[debug] [2019-11-01T15:54:28.777Z] ----------------------------------------------------------------------
+[debug] [2019-11-01T15:54:28.779Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-11-01T15:54:28.779Z] CLI Version:   7.6.1
+[debug] [2019-11-01T15:54:28.779Z] Platform:      darwin
+[debug] [2019-11-01T15:54:28.779Z] Node Version:  v12.12.0
+[debug] [2019-11-01T15:54:28.785Z] Time:          Fri Nov 01 2019 15:54:28 GMT+0000 (Greenwich Mean Time)
+[debug] [2019-11-01T15:54:28.785Z] ----------------------------------------------------------------------
+[debug] [2019-11-01T15:54:28.785Z] 
+[debug] [2019-11-01T15:54:28.794Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-01T15:54:28.794Z] > authorizing via signed-in user
+[debug] [2019-11-01T15:54:28.794Z] [iam] checking project fast-sale-property-solutions for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2019-11-01T15:54:28.795Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-11-01T15:54:28.795Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>

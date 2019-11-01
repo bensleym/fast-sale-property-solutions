@@ -12,10 +12,9 @@ class WhereWeCanHelp extends Component {
           offerFormDisplay={false}
         >
           <p className="hero-banner__intro">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            tristique tincidunt mi efficitur suscipit. Nam tristique enim
-            ligula, porttitor blandit metus molestie quis. Integer commodo
-            sapien justo, at sollicitudin odio dignissim vitae.{" "}
+            If your looking to sell your property fast, then we can help. We can
+            tailor solutions to meet your needs no matter what your reason for
+            selling is.
           </p>
         </HeroBanner>
         <WhereWeCanHelpContent />

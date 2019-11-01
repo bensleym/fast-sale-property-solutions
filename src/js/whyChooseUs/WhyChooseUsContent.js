@@ -57,7 +57,7 @@ const WhyChooseUsContent = () => {
       <p>
         This is why Fast Sale Property Solutions are one of the fastest growing
         property investor networks. We have the solutions, the expertise and the
-        resources to in almost all cases.
+        resources to help in almost all cases.
       </p>
     </div>
   );
