@@ -43,14 +43,14 @@ const WhyChooseUsContent = () => {
           win/win situation.
         </li>
         <li>
-          Our services are free! So there's no upfront costs that are
+          Our services are free! So there&apos;s no upfront costs that are
           non-refundable unlike other home buying companies. We broker the deal,
           we cover the costs and you walk away with cash in your pocket.
         </li>
         <li>
           Little or no equity? No problem, we can tailor a solution to meet your
-          needs that doesn’t involve cash for your property. There's always a
-          solution and we work closely with our clients to ensure the best
+          needs that doesn’t involve cash for your property. There&apos;s always
+          a solution and we work closely with our clients to ensure the best
           possible outcome.
         </li>
       </ul>
