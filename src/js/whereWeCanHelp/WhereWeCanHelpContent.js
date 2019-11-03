@@ -22,12 +22,12 @@ class WhereWeCanHelpContent extends Component {
             <section className="where-we-can-help-content__info col-lg-8 col-sm-12">
               <Router>
                 <WhereWeCanHelpHome path="/" />
+                <Repossession path="repossession" />
                 <FinancialDifficulties path="financial-difficulties" />
-                <ProblemsPayingYourMortgage path="problems-paying-your-mortgage" />
                 <Divorce path="divorce" />
+                <ProblemsPayingYourMortgage path="problems-paying-your-mortgage" />
                 <BrokenChain path="broken-chain" />
                 <Probate path="probate" />
-                <Repossession path="repossession" />
                 <MovingAbroad path="moving-abroad" />
               </Router>
             </section>

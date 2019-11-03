@@ -18,7 +18,7 @@ class ContactUs extends Component {
         >
           <p className="hero-banner__intro">
             If you&apos;ve got any questions or wish to discuss your situation
-            and see how we can help you, then simple call us, write to us or
+            and see how we can help you, then simply call us, write to us or
             fill out the contact form below and we will get back to you.
           </p>
         </HeroBanner>

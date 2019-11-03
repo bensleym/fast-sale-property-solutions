@@ -47,7 +47,7 @@ class MovingAbroad extends Component {
         <p>
           Many people when moving abroad with a house back home only have
           limited funds to cover them while they wait for their property to
-          sell. But two monthly mortgage payments soon eats in to pot.
+          sell. But two monthly mortgage payments soon eats in to your savings.
         </p>
         <p>
           Instead of enjoying your new life, you end up with sleepless nights,

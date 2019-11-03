@@ -32,12 +32,12 @@ class Probate extends Component {
         </p>
         <p>
           Selling through an estate agent when a property needs renovating is
-          hard work. The property will sit ideal on the market due to the
+          hard work. The property will sit idle on the market due to the
           unrealistic asking price. Having expensive estate agents fees and
           dropping the price is very uneconomical.
         </p>
         <p>
-          If you live miles away and aren’t able to monitor the property, whos
+          If you live miles away and aren’t able to monitor the property, who is
           going to keep an eye on it? Your property could become targeted by
           vandals or squatters. This would mean boarding up the property and
           what estate agent is going to spend time selling a boarded up

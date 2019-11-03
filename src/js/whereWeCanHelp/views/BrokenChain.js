@@ -28,7 +28,7 @@ class BrokenChain extends Component {
           importantly costly to your future.{" "}
         </p>
         <p>
-          With estate agents you have to many uncertainties. The main one being
+          With estate agents you have too many uncertainties. The main one being
           how long will it take to sell your property. You may get an offer on
           your family home but that doesn’t mean that it’s a guaranteed sale.
           The buyer can still pull out for their own reasons. Most prospective
@@ -43,18 +43,18 @@ class BrokenChain extends Component {
           sold.
         </p>
         <p>
-          You get to the final stages of the process where you about to complete
-          and your buyer pulls out of the deal due to financial difficulties.
-          What do you do now? Lose your dream house? Put your property back on
-          the market and wait months again? Or take out an expensive bridging
-          loan?
+          You get to the final stages of the process where you&apos;re about to
+          complete and your buyer pulls out of the deal due to financial
+          difficulties. What do you do now? Lose your dream house? Put your
+          property back on the market and wait months again? Or take out an
+          expensive bridging loan?
         </p>
         <p>
           The best way to sell your property quickly, to ensure you get your
           dream home, is to sell for cash. Fast Sale Property Solutions have a
           network of buyers ready to pay cash for your property. You will
           receive a cash offer after just one viewing, and from there we can
-          move quickly to get your property sold so you don’t lose out on your
+          move quickly to get your property sold so you don’t loose out on your
           dream home.
         </p>
       </article>

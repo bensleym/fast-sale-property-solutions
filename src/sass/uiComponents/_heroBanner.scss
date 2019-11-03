@@ -9,11 +9,8 @@
   }
 
   &--home {
-    background: url("./img/homepage/hero.jpg") no-repeat left center fixed;
+    background: url("./img/homepage/hero.jpg") no-repeat left center;
     background-size: cover;
-    @media screen and (min-width: $lg) {
-      background-position: center center;
-    }
   }
 
   &--get-an-offer {
