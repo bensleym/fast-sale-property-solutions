@@ -4,7 +4,7 @@ import { Link } from "@reach/router";
 class ProblemsPayingYourMortgage extends Component {
   render() {
     return (
-      <div>
+      <article>
         <h1>Problem Paying Your Mortgage</h1>
         <p>
           Fast Sale Property Solutions are here to help. We have several
@@ -89,7 +89,7 @@ class ProblemsPayingYourMortgage extends Component {
           <Link to="/contact-us">contact us</Link> today to see how we can help
           you.
         </p>
-      </div>
+      </article>
     );
   }
 }
