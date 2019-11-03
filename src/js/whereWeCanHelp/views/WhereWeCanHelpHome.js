@@ -3,7 +3,7 @@ import { Link } from "@reach/router";
 
 const WhereWeCanHelpHome = () => {
   return (
-    <div>
+    <article>
       <h1>A solution to meet all needs</h1>
       <p>
         There are multiple reasons for needing to sell your property fast. Some
@@ -22,7 +22,7 @@ const WhereWeCanHelpHome = () => {
         <Link to="/contact-us">Contact us</Link> today for a free confidential
         chat to discuss your possible solution.
       </p>
-    </div>
+    </article>
   );
 };
 
