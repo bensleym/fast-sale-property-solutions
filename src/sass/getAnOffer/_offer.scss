@@ -10,9 +10,12 @@
     width: 100%;
     padding: 20px;
     background: $gray-200;
-    display: flex;
-    justify-content: space-between;
     margin: 20px 0;
+
+    @media screen and (min-width: $lg) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__message {
@@ -22,10 +25,14 @@
   }
 
   &__cash-offer {
-    font-size: $font-lg;
+    font-size: 40px;
     padding: 0;
     margin: 0;
-    text-align: right;
+
+    @media screen and (min-width: $lg) {
+      text-align: right;
+      font-size: $font-lg;
+    }
   }
 
   &__accept-btn {

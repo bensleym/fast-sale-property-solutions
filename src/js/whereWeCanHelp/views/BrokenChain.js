@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class BrokenChain extends Component {
   render() {
     return (
-      <div>
+      <article>
         <h1>Broken Chain</h1>
         <p>
           Losing your dream home due to the sale of your property falling
@@ -30,17 +30,17 @@ class BrokenChain extends Component {
         <p>
           With estate agents you have to many uncertainties. The main one being
           how long will it take to sell your property. You may get an offer on
-          your family home but that doesn’t mean that, that is a guaranteed
-          sale. The buyer can still pull out for their own reasons. Most
-          prospective buyers probably haven’t even filled in a form for a
-          mortgage, so they are more than likely not in a position to proceed
-          quickly.
+          your family home but that doesn’t mean that it’s a guaranteed sale.
+          The buyer can still pull out for their own reasons. Most prospective
+          buyers probably haven’t even filled in a form for a mortgage, so they
+          are more than likely not in a position to proceed quickly.
         </p>
         <p>
           On top of that the mortgage may get refused, but even if it is
           successful you then face the speed at which the conveyors and
-          solicitors, which lets face it anyone that isn’t a first time buyer
-          will know is slow. It could be months before your home is sold.
+          solicitors move, which lets face it anyone that isn’t a first time
+          buyer will know it’s slow. It could be months before your home is
+          sold.
         </p>
         <p>
           You get to the final stages of the process where you about to complete
@@ -57,7 +57,7 @@ class BrokenChain extends Component {
           move quickly to get your property sold so you don’t lose out on your
           dream home.
         </p>
-      </div>
+      </article>
     );
   }
 }

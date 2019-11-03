@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class MovingAbroad extends Component {
   render() {
     return (
-      <div>
+      <article>
         <h1>Moving Abroad</h1>
         <p>
           What does time mean to you? Time is precious, time is something you
@@ -39,9 +39,9 @@ class MovingAbroad extends Component {
         <p>
           On the flip side, you may have already moved abroad, but your property
           back home is struggling to sell. Your now relying on an estate agent
-          to keep you up to date on progress, checking day after day after day
-          with the agent. Wasting precious time on phone calls and replying to
-          emails, rather than living your dream life. Not to mention the calls
+          to keep you up to date on the progress, checking day after day after
+          day with the agent. Wasting precious time on phone calls and replying
+          to emails rather than living your dream life. Not to mention the calls
           to the solicitor.
         </p>
         <p>
@@ -50,20 +50,20 @@ class MovingAbroad extends Component {
           sell. But two monthly mortgage payments soon eats in to pot.
         </p>
         <p>
-          Instead of enjoying your new life, you end up with sleepless nights
+          Instead of enjoying your new life, you end up with sleepless nights,
           stress about how the property back home is quickly eating away at
           funds. Worst of all, what happens if it doesn’t sell before the funds
           run out? The dream life rapidly comes to an end.
         </p>
         <p>
-          Fast Sale Property Solutions solve all your problems if your moving
-          abroad. Don’t waste time with a lengthy sales process. You could be
-          living your dream move quicker than you think, stress free.
+          Fast Sale Property Solutions can solve all your problems if your
+          moving abroad. Don’t waste time with a lengthy sales process. You
+          could be living your dream move quicker than you think, stress free.
         </p>
         <p>
           We have cash buyers ready to buy your property freeing up your
           precious time. After just one viewing you will receive a written offer
-          within 48 hours, within the aim to complete within 28 days.
+          within 48 hours, with the aim to complete within 28 days.
         </p>
         <p>
           Alternatively if you are happy to wait on the sale of your property
@@ -72,10 +72,11 @@ class MovingAbroad extends Component {
           the mortgage repayments and property maintenance.{" "}
         </p>
         <p>
-          We then agree on a price which you will grant us the option to buy
-          your property in the future. This is usually within two to five years.
+          We then agree on a price which you will then grant us the option to
+          buy your property in the future. This is usually within two to five
+          years.
         </p>
-      </div>
+      </article>
     );
   }
 }

@@ -5,7 +5,7 @@ import MenuControl from "../utils/MenuControl";
 class Navigation extends Component {
   render() {
     return (
-      <div>
+      <nav>
         <ul className="navigation" id="navigation">
           <li className="navigation__close">
             <button
@@ -64,7 +64,7 @@ class Navigation extends Component {
             <li className="navigation__item">Contact Us</li>
           </Link>
         </ul>
-      </div>
+      </nav>
     );
   }
 }

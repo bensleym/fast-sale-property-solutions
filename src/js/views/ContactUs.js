@@ -17,10 +17,9 @@ class ContactUs extends Component {
           offerFormDisplay={false}
         >
           <p className="hero-banner__intro">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            tristique tincidunt mi efficitur suscipit. Nam tristique enim
-            ligula, porttitor blandit metus molestie quis. Integer commodo
-            sapien justo, at sollicitudin odio dignissim vitae.{" "}
+            If you&apos;ve got any questions or wish to discuss your situation
+            and see how we can help you, then simple call us, write to us or
+            fill out the contact form below and we will get back to you.
           </p>
         </HeroBanner>
 

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Repossession extends Component {
   render() {
     return (
-      <div>
+      <article>
         <h1>Repossession</h1>
         <p>
           Repossession is one of the worst outcomes when having financial
@@ -17,8 +17,8 @@ class Repossession extends Component {
           repossession and your credit rating will be adversely affected.
         </p>
         <p>
-          You will subsequently have problems with lenders lending to you and
-          you may never qualify for a loan or mortgage again.
+          Subsequently you’ll have problems with lenders lending to you and you
+          may never qualify for a loan or mortgage again.
         </p>
         <p>
           All the past years of hard work building up your family home will be
@@ -55,7 +55,7 @@ class Repossession extends Component {
           Best course of action is to act now and prevent repossession from ever
           happening.
         </p>
-      </div>
+      </article>
     );
   }
 }

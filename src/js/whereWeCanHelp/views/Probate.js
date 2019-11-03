@@ -3,12 +3,12 @@ import React, { Component } from "react";
 class Probate extends Component {
   render() {
     return (
-      <div>
+      <article>
         <h1>Probate</h1>
         <p>
-          Inheriting a property isn’t always a straight forward. Usually if you
-          inherit a property you’ll need to sell it quickly before benefactors
-          can reap the benefits.
+          Inheriting a property isn’t always a straightforward process. Usually
+          if you inherit a property you’ll need to sell it quickly before
+          benefactors can reap the benefits.
         </p>
         <p>
           Other issues with an inherited property is the fact that property may
@@ -20,12 +20,11 @@ class Probate extends Component {
           buyers.
         </p>
         <p>
-          The problem with this is that the project will need financing, not
-          just that, you will also have to spend time finding reputable
-          tradesmen and constantly monitor the project. This is a very time and
-          cost consuming exercise. If there is more than one benefactor then the
-          cost needs to be divided out, and for some this could be a burden they
-          don’t need.
+          Updating the property will need financing, not just that, you will
+          also have to spend time finding reputable tradesmen and constantly
+          monitor the project. This is a very time and cost consuming exercise.
+          If there is more than one benefactor then the cost needs to be divided
+          out, and for some this could be a burden they don’t need.
         </p>
         <p>
           If there’s more than one benefactor, you’ll find that some may need to
@@ -33,7 +32,7 @@ class Probate extends Component {
         </p>
         <p>
           Selling through an estate agent when a property needs renovating is
-          hard work. The property will sit ideal on the market due to
+          hard work. The property will sit ideal on the market due to the
           unrealistic asking price. Having expensive estate agents fees and
           dropping the price is very uneconomical.
         </p>
@@ -51,7 +50,7 @@ class Probate extends Component {
           writing a cash offer in 48hrs. Upon agreement of the cash offer,
           completion could be completed within 28days.{" "}
         </p>
-      </div>
+      </article>
     );
   }
 }

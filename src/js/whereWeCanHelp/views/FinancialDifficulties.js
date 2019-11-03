@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class FinancialDifficulties extends Component {
   render() {
     return (
-      <div>
+      <article>
         <h1>Financial Difficulties</h1>
         <p>
           Debt in the UK is rising at a dangerous rate which means bankruptcy is
@@ -33,11 +33,11 @@ class FinancialDifficulties extends Component {
         </p>
         <p>
           Although this may seem like a straight forward option, have you
-          considered the risks you are exposing your family to? These a reason
+          considered the risks you are exposing your family to? There’s a reason
           they say “Your home is at risk if you cannot keep up with your
           mortgage payments and any loans secured on it.” What happens if you
           become unemployed, interest rates rise or full ill and are unable to
-          meet these repayments? Your home will be repossessed and leaving you
+          meet these repayments? Your home will be repossessed leaving you
           without a home.
         </p>
         <p>
@@ -49,8 +49,8 @@ class FinancialDifficulties extends Component {
         <p>
           What’s it mean to be bankrupt? Bankruptcy is a very serious situation,
           it will lead to you losing your home and all your assets. Your
-          finances will no longer be under your control, which also any income
-          you may have. It’s not just about the financial loss either,
+          finances will no longer be under your control, which also means any
+          income you may have. It’s not just about the financial loss either,
           bankruptcy comes with emotional trauma, trauma which came rip families
           and lives apart.
         </p>
@@ -76,7 +76,7 @@ class FinancialDifficulties extends Component {
           extensive network of investors who will aim to complete on your
           property within 28 days relieving you of your financial burden.
         </p>
-      </div>
+      </article>
     );
   }
 }

@@ -16,7 +16,9 @@ class WhyChooseUs extends Component {
             tailored to meet our clients needs.
           </p>
         </HeroBanner>
-        <WhyChooseUsContent />
+        <section>
+          <WhyChooseUsContent />
+        </section>
       </div>
     );
   }

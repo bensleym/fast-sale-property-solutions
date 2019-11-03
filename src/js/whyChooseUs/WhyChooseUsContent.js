@@ -2,7 +2,7 @@ import React from "react";
 
 const WhyChooseUsContent = () => {
   return (
-    <div className="why-choose-us-content container">
+    <article className="why-choose-us-content container">
       <h2>
         Fast Sale Property Solutions is one of the fastest growing property
         investor networks.{" "}
@@ -59,7 +59,7 @@ const WhyChooseUsContent = () => {
         property investor networks. We have the solutions, the expertise and the
         resources to help in almost all cases.
       </p>
-    </div>
+    </article>
   );
 };
 

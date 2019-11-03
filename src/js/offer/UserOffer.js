@@ -19,11 +19,17 @@ class UserOffer extends Component {
       <div>
         <HeroBanner
           cssModifier="offer"
-          title="Offer"
+          title="Your Offer"
           offerFormDisplay={false}
           offerBox={true}
           offerDetails={this.props.offerDetails}
-        ></HeroBanner>
+        >
+          <p className="hero-banner__intro">
+            Below is you preliminary cash offer. If you would like to take this
+            offer forwrd, simply click the button and we will contact you for a
+            no obligation discussion about your offer.
+          </p>
+        </HeroBanner>
         <div className="offer container">
           <h1 className="offer__title">This is your preliminary cash offer</h1>
           <div className="offer__offer-info">
@@ -51,11 +57,9 @@ class UserOffer extends Component {
           <div className="offer__next-steps">
             <h2>What happens next?</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              fringilla, massa ut cursus volutpat, nulla enim tempus ante, quis
-              viverra arcu lacus vel diam. Maecenas eleifend velit at pulvinar
-              laoreet. Vestibulum hendrerit nisi nec massa molestie, at
-              fermentum enim pulvinar.
+              This is your preliminary cash offer. If you would like to take
+              this offer forward, click the button and we will contact you to
+              discuss your no obligation offer.
             </p>
             <button
               className="submit-btn__btn offer__accept-btn"

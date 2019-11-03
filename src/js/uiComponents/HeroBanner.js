@@ -25,7 +25,7 @@ class HeroBanner extends Component {
 
   render() {
     return (
-      <div className={this.cssClasses()}>
+      <header className={this.cssClasses()}>
         <div className="container">
           <div className="row">
             <div className="col-lg-8 col-sm-12">
@@ -38,7 +38,7 @@ class HeroBanner extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </header>
     );
   }
 }

@@ -24,8 +24,8 @@ class ProblemsPayingYourMortgage extends Component {
           when using an estate agent.
         </p>
         <p>
-          The property market is oversupplied, which means in your property
-          could be on the market for a year, can you afford to keep paying your
+          The property market is oversupplied, which means your property could
+          be on the market for a year, can you afford to keep paying your
           mortgage repayments every month for a year or even 6 months?
         </p>
         <p>

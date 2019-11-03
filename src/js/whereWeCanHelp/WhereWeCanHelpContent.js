@@ -19,7 +19,7 @@ class WhereWeCanHelpContent extends Component {
             <div className="col-lg-4 col-sm-12">
               <SideNavigation />
             </div>
-            <div className="where-we-can-help-content__info col-lg-8 col-sm-12">
+            <section className="where-we-can-help-content__info col-lg-8 col-sm-12">
               <Router>
                 <WhereWeCanHelpHome path="/" />
                 <FinancialDifficulties path="financial-difficulties" />
@@ -30,7 +30,7 @@ class WhereWeCanHelpContent extends Component {
                 <Repossession path="repossession" />
                 <MovingAbroad path="moving-abroad" />
               </Router>
-            </div>
+            </section>
           </div>
         </div>
       </div>

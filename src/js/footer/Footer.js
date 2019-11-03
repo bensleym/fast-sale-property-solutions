@@ -6,7 +6,7 @@ import FooterLegals from "./FooterLegals";
 class Footer extends Component {
   render() {
     return (
-      <div className="footer">
+      <footer className="footer">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-sm-12">
@@ -56,7 +56,7 @@ class Footer extends Component {
           </div>
         </div>
         <FooterLegals />
-      </div>
+      </footer>
     );
   }
 }
