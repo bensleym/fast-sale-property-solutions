@@ -35,9 +35,9 @@ class FinancialDifficulties extends Component {
           Although this may seem like a straight forward option, have you
           considered the risks you are exposing your family to? There’s a reason
           they say “Your home is at risk if you cannot keep up with your
-          mortgage payments and any loans secured on it.” What happens if you
-          become unemployed, interest rates rise or full ill and are unable to
-          meet these repayments? Your home will be repossessed leaving you
+          mortgage payments and any loans secured on it. ”What happens if you
+          become unemployed, interest rates rise or you fall ill and are unable
+          to meet these repayments? Your home will be repossessed leaving you
           without a home.
         </p>
         <p>
@@ -47,12 +47,12 @@ class FinancialDifficulties extends Component {
         </p>
 
         <p>
-          What’s it mean to be bankrupt? Bankruptcy is a very serious situation,
-          it will lead to you losing your home and all your assets. Your
-          finances will no longer be under your control, which also means any
-          income you may have. It’s not just about the financial loss either,
-          bankruptcy comes with emotional trauma, trauma which came rip families
-          and lives apart.
+          What does it mean to be bankrupt? Bankruptcy is a very serious
+          situation, it will lead to you losing your home and all your assets.
+          Your finances will no longer be under your control, which also means
+          any income you may have. It’s not just about the financial loss
+          either, bankruptcy comes with emotional trauma, trauma which came rip
+          families and lives apart.
         </p>
         <p>
           Generally you’ll be discharged from bankruptcy and relieved from your

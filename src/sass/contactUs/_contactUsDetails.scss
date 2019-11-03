@@ -16,8 +16,12 @@
     margin-bottom: 50px;
   }
 
-  &__number {
+  &__phone {
     font-size: $font-lg;
-    color: $font;
+    margin-bottom: 50px;
+
+    a {
+      color: $font;
+    }
   }
 }

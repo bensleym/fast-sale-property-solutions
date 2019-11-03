@@ -10,7 +10,7 @@ class CookieBanner extends Component {
   }
 
   createCookie() {
-    document.cookie = "Consent=true";
+    document.cookie = "Consent=true; max-age=2628003";
   }
 
   getCookieData() {

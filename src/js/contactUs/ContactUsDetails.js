@@ -18,6 +18,11 @@ const ContactUsDetails = () => {
           07753 686 480
         </a>
       </div>
+
+      <div className="contact-us-details__opening">
+        <h2 className="contact-us-details__title">Open hours</h2>
+        <p>Monday - Friday: 9:00am - 17:00pm</p>
+      </div>
     </div>
   );
 };
