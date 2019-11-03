@@ -9,43 +9,74 @@
   }
 
   &--home {
-    background: url("./img/homepage/hero.jpg") no-repeat center center fixed;
+    background: url("./img/homepage/hero.jpg") no-repeat left center fixed;
     background-size: cover;
+    @media screen and (min-width: $lg) {
+      background-position: center center;
+    }
   }
 
   &--get-an-offer {
-    background: url("./img/homepage/hero2.jpg") no-repeat center center fixed;
+    background: url("./img/homepage/hero2.jpg") no-repeat;
     background-size: cover;
+
+    @media screen and (min-width: $lg) {
+      background-position: center center;
+    }
   }
 
   &--where-we-can-help {
-    background: url("./img/homepage/hero3.jpg") no-repeat center bottom fixed;
+    background: url("./img/homepage/hero3.jpg") no-repeat;
     background-size: cover;
+
+    @media screen and (min-width: $lg) {
+      background-position: center center;
+    }
   }
 
   &--why-choose-us {
-    background: url("./img/homepage/hero5.jpg") no-repeat center center fixed;
+    background: url("./img/homepage/hero5.jpg") no-repeat;
     background-size: cover;
+
+    @media screen and (min-width: $lg) {
+      background-position: center center;
+    }
   }
 
   &--standards-and-ethics {
-    background: url("./img/homepage/hero4.jpg") no-repeat center center fixed;
+    background: url("./img/homepage/hero4.jpg") no-repeat;
     background-size: cover;
+
+    @media screen and (min-width: $lg) {
+      background-position: center center;
+    }
   }
 
   &--contact-us {
-    background: url("./img/homepage/hero6.jpg") no-repeat center bottom fixed;
+    background: url("./img/homepage/hero6.jpg") no-repeat;
     background-size: cover;
+
+    @media screen and (min-width: $lg) {
+      background-position: center top;
+    }
   }
 
   &--offer {
-    background: url("./img/homepage/hero2.jpg") no-repeat center center fixed;
+    background: url("./img/homepage/hero2.jpg") no-repeat;
     background-size: cover;
+
+    @media screen and (min-width: $lg) {
+      background-position: center center fixed;
+    }
   }
 
   &--offer-accepted {
-    background: url("./img/homepage/hero2.jpg") no-repeat center center fixed;
+    background: url("./img/homepage/hero2.jpg") no-repeat;
     background-size: cover;
+
+    @media screen and (min-width: $lg) {
+      background-position: center center fixed;
+    }
   }
 
   &__title {
