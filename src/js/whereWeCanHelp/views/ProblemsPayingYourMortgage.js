@@ -26,7 +26,7 @@ class ProblemsPayingYourMortgage extends Component {
         <p>
           The property market is oversupplied, which means your property could
           be on the market for a year, can you afford to keep paying your
-          mortgage repayments every month for a year or even 6 months?
+          mortgage repayments every month for a year or even longer?
         </p>
         <p>
           The estate agent will advise you to keep dropping the price to
