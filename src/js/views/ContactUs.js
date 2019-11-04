@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MetaTags from "react-meta-tags";
 import HeroBanner from "../uiComponents/HeroBanner";
 import ContactUsForm from "../contactUs/ContactUsForm";
 import ContactUsDetails from "../contactUs/ContactUsDetails";
@@ -11,6 +12,17 @@ class ContactUs extends Component {
   render() {
     return (
       <div>
+        <MetaTags>
+          <title>Fast Sale Property Solutions - Contact Us</title>
+          <meta
+            name="description"
+            content="Contact Fast Sale Property Solutions today. We're here to answer your questions on how best to sell your property fast"
+          />
+          <meta
+            property="og:title"
+            content="Fast Sale Property Solutions - Contact Us"
+          />
+        </MetaTags>
         <HeroBanner
           cssModifier="contact-us"
           title="Contact Us"

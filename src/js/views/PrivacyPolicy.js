@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MetaTags from "react-meta-tags";
 import HeroBanner from "../uiComponents/HeroBanner";
 import PrivacyPolicyContent from "../privacyPolicy/PrivacyPolicyContent";
 
@@ -10,6 +11,17 @@ class PrivacyPolicy extends Component {
   render() {
     return (
       <div>
+        <MetaTags>
+          <title>Fast Sale Property Solutions - Privacy Policy</title>
+          <meta
+            name="description"
+            content="Fast Sale Property Solutions privacy policy"
+          />
+          <meta
+            property="og:title"
+            content="Fast Sale Property Solutions - Privacy Policy"
+          />
+        </MetaTags>
         <HeroBanner
           cssModifier="privacy-policy"
           title="Privacy Ploicy"
