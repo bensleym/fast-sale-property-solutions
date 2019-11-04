@@ -1,0 +1,19 @@
+Allow: /
+Allow: /contact-us
+Allow: /why-choose-us
+Allow: /where-we-can-help
+Allow: /get-an-offer
+Allow: /standards-and-ethics
+Allow: /privacy-policy
+Allow: /cookie-policy
+Allow: /terms-and-conditions
+Allow: /where-we-can-help/financial-difficulties
+Allow: /where-we-can-help/problems-paying-your-mortgage
+Allow: /where-we-can-help/repossession
+Allow: /where-we-can-help/broken-chain
+Allow: /where-we-can-help/moving-abroad
+Allow: //where-we-can-help/divorce
+Allow: /where-we-can-help/probate
+
+Disallow: /offer
+Disallow: /offer-accepted
