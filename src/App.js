@@ -12,6 +12,9 @@ import Footer from "./js/footer/Footer";
 import Offer from "./js/views/Offer";
 import CookieBanner from "./js/utils/CookieBanner";
 import OfferAccepted from "./js/views/OfferAccepted";
+import CookiePolicy from "./js/views/CookiePolicy";
+import PrivacyPolicy from "./js/views/PrivacyPolicy";
+import TermsAndConditions from "./js/views/TermsAndConditions";
 
 window.fsps = {};
 
@@ -29,6 +32,9 @@ const App = () => {
           <WhyChooseUs path="why-choose-us" />
           <Offer path="/offer" />
           <OfferAccepted path="/offer-accepted" />
+          <CookiePolicy path="/cookie-policy" />
+          <PrivacyPolicy path="/privacy-policy" />
+          <TermsAndConditions path="/terms-and-conditions" />
         </Router>
         <Footer />
         <CookieBanner />

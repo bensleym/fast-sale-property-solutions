@@ -9,12 +9,39 @@
   }
 
   &--home {
-    background: url("./img/homepage/hero.jpg") no-repeat left center;
+    background: url("./img/heroBanners/hero.jpg") no-repeat left center;
     background-size: cover;
   }
 
   &--get-an-offer {
-    background: url("./img/homepage/hero2.jpg") no-repeat;
+    background: url("./img/heroBanners/hero2.jpg") no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: $lg) {
+      background-position: center center;
+    }
+  }
+
+  &--privacy-policy {
+    background: url("./img/heroBanners/hero7.jpg") no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: $lg) {
+      background-position: center center;
+    }
+  }
+
+  &--terms-and-conditions {
+    background: url("./img/heroBanners/hero7.jpg") no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: $lg) {
+      background-position: center center;
+    }
+  }
+
+  &--cookie-policy {
+    background: url("./img/heroBanners/hero7.jpg") no-repeat;
     background-size: cover;
 
     @media screen and (min-width: $lg) {
@@ -23,7 +50,7 @@
   }
 
   &--where-we-can-help {
-    background: url("./img/homepage/hero3.jpg") no-repeat;
+    background: url("./img/heroBanners/hero3.jpg") no-repeat;
     background-size: cover;
 
     @media screen and (min-width: $lg) {
@@ -32,7 +59,7 @@
   }
 
   &--why-choose-us {
-    background: url("./img/homepage/hero5.jpg") no-repeat;
+    background: url("./img/heroBanners/hero5.jpg") no-repeat;
     background-size: cover;
 
     @media screen and (min-width: $lg) {
@@ -41,7 +68,7 @@
   }
 
   &--standards-and-ethics {
-    background: url("./img/homepage/hero4.jpg") no-repeat;
+    background: url("./img/heroBanners/hero4.jpg") no-repeat;
     background-size: cover;
 
     @media screen and (min-width: $lg) {
@@ -50,7 +77,7 @@
   }
 
   &--contact-us {
-    background: url("./img/homepage/hero6.jpg") no-repeat;
+    background: url("./img/heroBanners/hero6.jpg") no-repeat;
     background-size: cover;
 
     @media screen and (min-width: $lg) {
@@ -59,7 +86,7 @@
   }
 
   &--offer {
-    background: url("./img/homepage/hero2.jpg") no-repeat;
+    background: url("./img/heroBanners/hero2.jpg") no-repeat;
     background-size: cover;
 
     @media screen and (min-width: $lg) {
@@ -68,7 +95,7 @@
   }
 
   &--offer-accepted {
-    background: url("./img/homepage/hero2.jpg") no-repeat;
+    background: url("./img/heroBanners/hero2.jpg") no-repeat;
     background-size: cover;
 
     @media screen and (min-width: $lg) {

@@ -51,6 +51,19 @@ class Footer extends Component {
                     Standards &amp; Ethics
                   </Link>
                 </li>
+                <li className="footer__list-item">
+                  <Link to="/privacy-policy" className="footer__link">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <Link to="/terms-and-conditions" className="footer__link">
+                  Terms And Conditions
+                </Link>
+                <li className="footer__list-item">
+                  <Link to="/cookie-policy" className="footer__link">
+                    Cookie Policy
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

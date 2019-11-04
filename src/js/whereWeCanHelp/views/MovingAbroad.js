@@ -28,8 +28,7 @@ class MovingAbroad extends Component {
         </p>
         <p>
           You have the stress of having people coming to view your property,
-          making sure your property is in the best possible condition it can be,
-          and how easy is that to do with kids?
+          making sure your property is in the best possible condition it can be.
         </p>
         <p>
           If you sell through an estate agent you are exposed to all kinds of
