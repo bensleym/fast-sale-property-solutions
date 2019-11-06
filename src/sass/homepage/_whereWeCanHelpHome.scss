@@ -1,0 +1,13 @@
+.where-we-can-help-home {
+  padding: 40px 0;
+
+  @media screen and (min-width: $lg) {
+    padding: 20px 0 50px;
+  }
+
+  &__title {
+    padding: 0 0 10px;
+    margin: 40px 0;
+    border-bottom: 1px solid $gray-300;
+  }
+}

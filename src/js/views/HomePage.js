@@ -3,6 +3,8 @@ import MetaTags from "react-meta-tags";
 import UspsHome from "../hompage/UspsHome";
 import IntroHome from "../hompage/IntroHome";
 import HeroBanner from "../uiComponents/HeroBanner";
+import ProcessHome from "../hompage/ProcessHome";
+import WhereWeCanHelpHome from "../hompage/WhereWeCanHelpHome";
 
 class Homepage extends Component {
   render() {
@@ -23,16 +25,11 @@ class Homepage extends Component {
           cssModifier="home"
           title="Fast Sale Property Solutions"
           offerFormDisplay={true}
-        >
-          <p className="hero-banner__intro">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            tristique tincidunt mi efficitur suscipit. Nam tristique enim
-            ligula, porttitor blandit metus molestie quis. Integer commodo
-            sapien justo, at sollicitudin odio dignissim vitae.{" "}
-          </p>
-        </HeroBanner>
+        />
         <UspsHome />
         <IntroHome />
+        <WhereWeCanHelpHome />
+        <ProcessHome />
       </div>
     );
   }

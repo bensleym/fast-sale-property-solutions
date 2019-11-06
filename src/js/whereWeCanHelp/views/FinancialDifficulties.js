@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import MetaTags from "react-meta-tags";
 
 class FinancialDifficulties extends Component {
+  constructor() {
+    super();
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div>

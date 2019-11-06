@@ -1,0 +1,32 @@
+.process-home {
+  margin-bottom: 40px;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    padding: 0 0 10px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid $gray-300;
+  }
+
+  &__item {
+    min-width: 100%;
+    padding: 20px 20px 0;
+    border-bottom: 1px solid $gray-300;
+    margin: 10px 0;
+    flex: 1;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    @media screen and (min-width: $lg) {
+      min-width: 49%;
+      flex-basis: 49%;
+      margin: 10px 1% 0 0;
+    }
+  }
+}

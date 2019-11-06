@@ -1,7 +1,7 @@
 .usp-block {
   text-align: center;
-  border-right: 1px solid $gray-100;
   padding: 20px;
+  flex: 1;
 
   &:last-child {
     border-right: none;

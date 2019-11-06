@@ -1,0 +1,20 @@
+.process {
+  $block: &;
+  width: 100%;
+  margin: 0 0 20px;
+  display: flex;
+
+  &:hover {
+    #{$block}__number {
+      background: $primary;
+    }
+  }
+
+  &__number {
+    margin-right: 30px;
+    font-size: 30px;
+    background: $gray-300;
+    color: $white;
+    padding: 0 10px;
+  }
+}

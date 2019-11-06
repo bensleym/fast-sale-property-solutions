@@ -15,6 +15,9 @@ export default class FormControl {
       if (!inputsWithError[i].value) {
         inputErrorDom.innerHTML = "*Required";
       }
+      if (!inputsWithError[i].checked) {
+        inputErrorDom.innerHTML = "*Required";
+      }
     }
 
     if (inputsWithError.length === 0) {

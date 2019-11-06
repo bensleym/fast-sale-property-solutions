@@ -3,6 +3,10 @@ import { Link } from "@reach/router";
 import MetaTags from "react-meta-tags";
 
 class ProblemsPayingYourMortgage extends Component {
+  constructor() {
+    super();
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div>

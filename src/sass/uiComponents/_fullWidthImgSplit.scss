@@ -1,0 +1,37 @@
+.full-width-img-split {
+  @media screen and (min-width: $lg) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    width: 100%;
+    img {
+      max-width: 100%;
+    }
+
+    @media screen and (min-width: $lg) {
+      width: 50%;
+    }
+
+    &--alt {
+      order: 1;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+
+    @media screen and (min-width: $lg) {
+      width: 50%;
+      padding: 0 30px;
+    }
+  }
+
+  p {
+    line-height: 40px;
+  }
+}

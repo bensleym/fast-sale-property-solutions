@@ -5,6 +5,7 @@ import PropertyDetails from "./PropertyDetails";
 import PropertyAddress from "./PropertyAddress";
 import FormControl from "./../utils/FormControl";
 import { navigate } from "@reach/router";
+import CheckboxRow from "../uiComponents/CheckboxRow";
 
 class GetAnOfferForm extends Component {
   state = {};
@@ -117,13 +118,11 @@ class GetAnOfferForm extends Component {
             e.preventDefault();
             this.handleSubmit(e);
           }}
-          onChange={e => {
-            e.preventDefault();
-          }}
         >
           <PersonalDetails userDetails={this.state} />
           <PropertyAddress />
           <PropertyDetails />
+          <CheckboxRow id="termsAndConditionsAccepted" required={true} />
           <SubmitBtn value="Get an offer" />
         </form>
       </div>

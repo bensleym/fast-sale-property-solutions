@@ -1,0 +1,32 @@
+.checkbox-row {
+  width: 100%;
+  margin-bottom: 15px;
+  display: inline-block;
+
+  &__label {
+    font-size: $font-md;
+    margin: 0 0 0 5px;
+  }
+
+  &__required {
+    &::after {
+      content: "*";
+      color: $danger;
+      position: absolute;
+      padding-left: 2px;
+      font-size: $font-sm;
+    }
+  }
+
+  &__input {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid $gray-300;
+
+    &::placeholder {
+      color: $gray-300;
+      font-weight: 300;
+      font-size: $font-md;
+    }
+  }
+}

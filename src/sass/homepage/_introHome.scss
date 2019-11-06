@@ -1,14 +1,14 @@
 .intro-home {
   margin-top: 40px;
-  background: #2c3a96;
+  background: $primary;
   padding-bottom: 80px;
+  text-align: center;
 
   @media screen and (min-width: $lg) {
-    padding: 150px 0;
+    padding: 70px 0;
   }
 
   &__content {
-    padding-right: 50px;
     color: $white;
     padding-top: 40px;
 
